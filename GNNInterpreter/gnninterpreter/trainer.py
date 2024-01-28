@@ -105,7 +105,8 @@ class Trainer:
                 min_p <= disc_out["probs"][0, classes].item() <= max_p
                 for classes, (min_p, max_p) in self.target_probs.items()
             ]):
-                print(f"\nPrediction of the sample: {disc_out['probs'][0, classes].item()}" for classes, (min_p, max_p) in self.target_probs.items())
+                print("Hello")
+                print("\nPrediction of the sample: ", (disc_out["probs"][0, classes].item() for classes, (min_p, max_p) in self.target_probs.items()))
                 if self.budget_penalty and self.sampler.expected_m <= self.budget_penalty.budget:
                     # print(f"\nPrediction of the sample: {disc_out['probs'][0, classes].item()}" for classes in self.target_probs)
                     print(f"Expected number of edges of sample: {self.sampler.expected_m}; Budget: {self.budget_penalty.budget}")
@@ -119,7 +120,7 @@ class Trainer:
                 ### How will budget penalty decrease help in achieving target prob?
                 budget_penalty_weight *= 0.95 ### if the generated explanation doesn't achieve the target probability, then decrease the budget penalty weight by 5%
 
-            loss = self.criterion(cont_out | self.sampler.to_dict())
+            loss = self.criterion(cont_out | self.sampler.to_dict()) ### Why is self.sample.to_dict() used here? 
             if self.budget_penalty:
                 loss += self.budget_penalty(self.sampler.theta) * budget_penalty_weight
             loss.backward()  # Back-propagate gradients
