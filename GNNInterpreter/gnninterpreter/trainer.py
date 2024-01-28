@@ -54,17 +54,21 @@ class Trainer:
         return logits
 
     def detailed_probe(self):
-        return pd.DataFrame(dict(
+            
+        det_probe = pd.DataFrame(dict(
             logits_discrete=(ld := self.probe(discrete=True)),
             logits_continuous=(lc := self.probe(discrete=False)),
             prob_discrete=F.softmax(torch.tensor(ld), dim=0).tolist(),
             prob_continuous=F.softmax(torch.tensor(lc), dim=0).tolist(),
         ))
+        print("detailed_probe: ", det_probe)
 
     def warmup(self, iterations, cls, score):
         orig_criterion = copy.deepcopy(self.criterion)
         orig_iteration = self.iteration
-        while self.probe(cls, discrete=True) < score:
+        
+        ### Pranav : (What is this part doing?)
+        while self.probe(cls, discrete=True) < score: 
             self.criterion = copy.deepcopy(orig_criterion)
             self.iteration = orig_iteration
             self.sampler.init(seed=self.seed)
@@ -80,11 +84,18 @@ class Trainer:
         for _ in (bar := tqdm(range(int(iterations)), initial=self.iteration, total=self.iteration+iterations)):
             for opt in self.optimizer:
                 opt.zero_grad()
+            
+            ### sample both continuous and discrete graphs 
+            ### Pranav: Why is the k argument different for continuous and discrete graphs?
             cont_data = self.sampler(k=self.k, mode='continuous', seed=self.seed)
             disc_data = self.sampler(k=1, mode='discrete', seed=self.seed, expected=True)
-            # TODO: potential bug
+            
+            # TODO: potential bug  ### Pranav: What is the bug is the author referring to?
+            
+            # get the logits, probs, and embeddings for the continuous and discrete graphs
             cont_out = self.discriminator(cont_data, edge_weight=cont_data.edge_weight)
             disc_out = self.discriminator(disc_data, edge_weight=disc_data.edge_weight)
+            
             if self.target_probs and all([
                 min_p <= disc_out["probs"][0, classes].item() <= max_p
                 for classes, (min_p, max_p) in self.target_probs.items()

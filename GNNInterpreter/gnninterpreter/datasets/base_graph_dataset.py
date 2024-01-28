@@ -137,6 +137,8 @@ class BaseGraphDataset(pyg.data.InMemoryDataset, ABC):
         model.eval()
         for batch in self.loader(batch_size=batch_size, shuffle=False):
             f1(model(batch)['logits'], batch.y)
+        for cls_idx, cls in self.GRAPH_CLS.items():
+            print(f"class idx: {cls_idx}, class: {cls}, f1: {f1.compute()[cls_idx]}")
         return dict(zip(self.GRAPH_CLS.values(), f1.compute().tolist()))
     
     @torch.no_grad()
