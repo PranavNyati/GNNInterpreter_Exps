@@ -20,7 +20,7 @@ from typing import Type, TypeVar
 
 class Trainer:
     def __init__(self,
-                 sampler: GraphSampler,
+                 sampler,
                  discriminator,
                  criterion,
                  scheduler,
