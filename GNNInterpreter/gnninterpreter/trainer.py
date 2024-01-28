@@ -105,8 +105,9 @@ class Trainer:
                 min_p <= disc_out["probs"][0, classes].item() <= max_p
                 for classes, (min_p, max_p) in self.target_probs.items()
             ]):
+                print(f"\nPrediction of the sample: {disc_out['probs'][0, classes].item()}" for classes, (min_p, max_p) in self.target_probs.items())
                 if self.budget_penalty and self.sampler.expected_m <= self.budget_penalty.budget:
-                    print(f"\nPrediction of the sample: {disc_out['probs'][0, classes].item()}" for classes in self.target_probs)
+                    # print(f"\nPrediction of the sample: {disc_out['probs'][0, classes].item()}" for classes in self.target_probs)
                     print(f"Expected number of edges of sample: {self.sampler.expected_m}; Budget: {self.budget_penalty.budget}")
                     print("Current explanation has high prediction probability and low expected maximum number of edges. Hence, it is a good explanation.")
                     print("Breaking from train loop!\n")
