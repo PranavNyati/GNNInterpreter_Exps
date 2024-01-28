@@ -105,8 +105,8 @@ class Trainer:
                 min_p <= disc_out["probs"][0, classes].item() <= max_p
                 for classes, (min_p, max_p) in self.target_probs.items()
             ]):
-                print("Hello")
-                print("\nPrediction of the sample: ", (disc_out["probs"][0, classes].item() for classes, (min_p, max_p) in self.target_probs.items()))
+                # print("Hello")
+                print("\nPrediction of the sample: ", (disc_out["probs"][0, classes] for classes, (min_p, max_p) in self.target_probs.items()))
                 if self.budget_penalty and self.sampler.expected_m <= self.budget_penalty.budget:
                     # print(f"\nPrediction of the sample: {disc_out['probs'][0, classes].item()}" for classes in self.target_probs)
                     print(f"Expected number of edges of sample: {self.sampler.expected_m}; Budget: {self.budget_penalty.budget}")
@@ -192,7 +192,7 @@ class Trainer:
         print(f"{n=} {m=}")
         print(f"{logits=}")
         print(f"{probs=}")
-        self.dataset.draw(G, ax=ax, path=path)
+        self.dataset.draw(G, ax=ax)
 
     def plot_networkx_graph(self, G):
         pass
