@@ -12,7 +12,7 @@ import glob
 import torch.nn.functional as F
 import torch_geometric as pyg
 from typing import Type, TypeVar
-from graph_sampler import GraphSampler
+# from graph_sampler import GraphSampler
 
 # TODO: refactor
 # from .datasets import *
