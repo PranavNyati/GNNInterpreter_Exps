@@ -24,26 +24,26 @@ class GCNClassifier(nn.Module):
                                                                   size=len(batch.x),
                                                                   temperature=temperature))
 
-            print("GCN forward: Batch size for GCN forward: ", batch.x.shape)
-            print("GCN forward: Batch type: ", type(batch), type(batch.x))
+            # print("GCN forward: Batch size for GCN forward: ", batch.x.shape)
+            # print("GCN forward: Batch type: ", type(batch), type(batch.x))
             
             # 1. Obtain node embeddings
             h = self.conv(batch.x, batch.edge_index, edge_weight=edge_weight)
-            print("GCN forward: h shape = ", h.shape)
+            # print("GCN forward: h shape = ", h.shape)
             
             # 2. Readout layer
             embeds = torch.cat([
                 global_sum_pool_weighted(h, batch=batch.batch, node_weight=node_weight),
                 global_mean_pool_weighted(h, batch=batch.batch, node_weight=node_weight),
             ], dim=1)
-            print("GCN forward: embeds shape = ", embeds.shape)
-            print("GCN forward: embeds = ", embeds)
+            # print("GCN forward: embeds shape = ", embeds.shape)
+            # print("GCN forward: embeds = ", embeds)
 
         h = self.drop(embeds)
         h = self.lin(h)
-        print("GCN forward: Dim after ff layer = ", h.shape)  
+        # print("GCN forward: Dim after ff layer = ", h.shape)  
         h = h.relu()
         h = self.out(h)
-        print("GCN forward: Dim after out layer = ", h.shape)
+        # print("GCN forward: Dim after out layer = ", h.shape)
 
         return dict(logits=h, probs=F.softmax(h, dim=-1), embeds=embeds)

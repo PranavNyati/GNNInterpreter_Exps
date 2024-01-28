@@ -20,16 +20,16 @@ from typing import Type, TypeVar
 
 class Trainer:
     def __init__(self,
-                 sampler,
-                 discriminator,
-                 criterion,
-                 scheduler,
-                 optimizer,
-                 dataset,
-                 budget_penalty=None,
+                 sampler,  ### graph sampler object
+                 discriminator, ### model to be explained
+                 criterion, ### total weighted loss objective including the regularizers
+                 scheduler, ### scheduler for learning rate decay
+                 optimizer, ### optimizer for the sampler (SGD, Adam, etc.)
+                 dataset, 
+                 budget_penalty=None, ### expected maximum number of edges in the sampled graph
                  seed=None,
-                 target_probs: dict[tuple[float, float]] = None,
-                 k_samples=32):
+                 target_probs: dict[tuple[float, float]] = None,  ### ??
+                 k_samples=32): ### ??
         self.k = k_samples
         self.target_probs = target_probs
         self.sampler = sampler
@@ -48,6 +48,7 @@ class Trainer:
     def probe(self, cls=None, discrete=False):
         graph = self.sampler(k=self.k, discrete=discrete, seed=self.seed)
         logits = self.discriminator(graph, edge_weight=graph.edge_weight)["logits"].mean(dim=0).tolist()
+        print(f"probe: {logits=}")
         if cls is not None:
             return logits[cls]
         return logits
