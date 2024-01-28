@@ -113,7 +113,7 @@ class MUTAGDataset(BaseGraphDataset):
                                     })
         nx.draw_networkx_edges(G.subgraph(G.nodes), pos, ax=ax, width=6)
         
-        plt.savefig(path)
+        # plt.savefig(path)
 
     def process(self):
         super().process()

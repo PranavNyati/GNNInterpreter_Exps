@@ -28,7 +28,8 @@ class Trainer:
                  dataset, 
                  budget_penalty=None, ### expected maximum number of edges in the sampled graph
                  seed=None,
-                 target_probs: dict[tuple[float, float]] = None,  ### ??
+                 target_probs: dict[tuple[float, float]] = None,  ### gives the range of probabilities for target class to be explained
+                 ### i.e., if target_probs = {1: (0.9, 1)}, then the target class is 1 and we want the prob of the generated explanation to be in the range [0.9, 1]
                  k_samples=32): ### ??
         self.k = k_samples
         self.target_probs = target_probs
@@ -81,6 +82,8 @@ class Trainer:
         self.discriminator.eval()
         self.sampler.train()
         budget_penalty_weight = 1
+        
+        # for each iteration:
         for _ in (bar := tqdm(range(int(iterations)), initial=self.iteration, total=self.iteration+iterations)):
             for opt in self.optimizer:
                 opt.zero_grad()
@@ -96,16 +99,24 @@ class Trainer:
             cont_out = self.discriminator(cont_data, edge_weight=cont_data.edge_weight)
             disc_out = self.discriminator(disc_data, edge_weight=disc_data.edge_weight)
             
+            # if there is some target probability and the probability of the target explanation is within the range of target_probs 
+            # and the expected maximum number of edges in the sampled graph is less than the pre-defined budget, then current graph is a good explanation (break from the loop)
             if self.target_probs and all([
                 min_p <= disc_out["probs"][0, classes].item() <= max_p
                 for classes, (min_p, max_p) in self.target_probs.items()
             ]):
                 if self.budget_penalty and self.sampler.expected_m <= self.budget_penalty.budget:
-                    print("Breaking from train loop!")
+                    print(f"\nPrediction of the sample: {disc_out['probs'][0, classes].item()}" for classes in self.target_probs)
+                    print(f"Expected number of edges of sample: {self.sampler.expected_m}; Budget: {self.budget_penalty.budget}")
+                    print("Current explanation has high prediction probability and low expected maximum number of edges. Hence, it is a good explanation.")
+                    print("Breaking from train loop!\n")
                     break
-                budget_penalty_weight *= 1.1
+                
+                budget_penalty_weight *= 1.1 ### if the expected max no of edges > budget, then increase the budget penalty weight by 10%
             else:
-                budget_penalty_weight *= 0.95
+                ### Doubt: Why decrease budget penalty if expln doesn't achieve target prob?
+                ### How will budget penalty decrease help in achieving target prob?
+                budget_penalty_weight *= 0.95 ### if the generated explanation doesn't achieve the target probability, then decrease the budget penalty weight by 5%
 
             loss = self.criterion(cont_out | self.sampler.to_dict())
             if self.budget_penalty:
