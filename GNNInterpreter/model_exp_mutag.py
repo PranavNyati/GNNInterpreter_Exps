@@ -1,7 +1,8 @@
 from gnninterpreter import *
 import torch
 
-dataset = MUTAGDataset(seed=12345)
+global_seed = 12345
+dataset = MUTAGDataset(seed=global_seed)
 
 model = GCNClassifier(node_features=len(dataset.NODE_CLS),
                       num_classes=len(dataset.GRAPH_CLS),

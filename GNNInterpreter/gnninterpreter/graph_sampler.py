@@ -25,6 +25,7 @@ class GraphSampler(nn.Module):
                  G: nx.Graph = None,
                  learn_node_feat: bool = False,
                  learn_edge_feat: bool = False,
+                 seed: Optional[int] = None,
                  temperature: float = 1):
         """
         :param nodes: candidate nodes
@@ -39,10 +40,17 @@ class GraphSampler(nn.Module):
         self.n = max_nodes or len(nodes)
         self.k = num_node_cls or (max(nodes) if nodes is not None else 1)
         self.l = num_edge_cls
+        self.seed = seed
+        if seed is not None:
+            torch.manual_seed(seed)
+            random.seed(seed)
+            np.random.seed(seed)
+        
         self.nodes = nodes or self._gen_random_cls(self.n, self.k)
         self.edges = edges or self._gen_complete_edges(self.n)
         self.edge_cls = self._gen_random_cls(self.m, self.l) if num_edge_cls else None
         self.tau = temperature
+
 
         self.param_list = []
 
@@ -64,7 +72,8 @@ class GraphSampler(nn.Module):
         self.init()
 
     @torch.no_grad()
-    def init(self, G=None, eps=1e-4):
+    def init(self, G=None, eps=1e-4, seed=None):
+        torch.manual_seed(seed)
         theta = torch.rand(self.m) if G is None else torch.stack([
             torch.tensor(1 - eps if (u, v) in G.edges or (v, u) in G.edges else eps)
             for u, v in self.edge_index.T[:self.m].tolist()
@@ -267,17 +276,19 @@ class GraphSampler(nn.Module):
 
         return G
 
-    def _bernoulli_threshold(self):
+    def _bernoulli_threshold(self, seed=None):
+        if seed is not None:
+            torch.manual_seed(seed)
         return torch.rand_like(self.theta)
 
     def _top_k_threshold(self, k):
         return self.theta.sort()[0][-k]
 
-    def sample(self, threshold=0.5, k=None, bernoulli=False) -> pyg.data.Data:
+    def sample(self, threshold=0.5, k=None, seed=None, bernoulli=False) -> pyg.data.Data:
         if k is not None:
             threshold = self._top_k_threshold(k=k)
         if bernoulli:
-            threshold = self._bernoulli_threshold()
+            threshold = self._bernoulli_threshold(seed=seed)
         return self.sample_by_threshold(threshold=threshold)
 
     def save(self, path):

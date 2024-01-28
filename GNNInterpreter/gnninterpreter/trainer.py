@@ -11,6 +11,8 @@ import pickle
 import glob
 import torch.nn.functional as F
 import torch_geometric as pyg
+from typing import Type, TypeVar
+from graph_sampler import GraphSampler
 
 # TODO: refactor
 # from .datasets import *
@@ -18,13 +20,14 @@ import torch_geometric as pyg
 
 class Trainer:
     def __init__(self,
-                 sampler,
+                 sampler: GraphSampler,
                  discriminator,
                  criterion,
                  scheduler,
                  optimizer,
                  dataset,
                  budget_penalty=None,
+                 seed=None,
                  target_probs: dict[tuple[float, float]] = None,
                  k_samples=32):
         self.k = k_samples
@@ -37,9 +40,13 @@ class Trainer:
         self.optimizer = optimizer if isinstance(optimizer, list) else [optimizer]
         self.dataset = dataset
         self.iteration = 0
+        self.seed = seed
+        # set seed for networkx
+        # if seed is not None:
+        #     nx.set_random_seed(seed)
 
     def probe(self, cls=None, discrete=False):
-        graph = self.sampler(k=self.k, discrete=discrete)
+        graph = self.sampler(k=self.k, discrete=discrete, seed=self.seed)
         logits = self.discriminator(graph, edge_weight=graph.edge_weight)["logits"].mean(dim=0).tolist()
         if cls is not None:
             return logits[cls]
@@ -59,7 +66,7 @@ class Trainer:
         while self.probe(cls, discrete=True) < score:
             self.criterion = copy.deepcopy(orig_criterion)
             self.iteration = orig_iteration
-            self.sampler.init()
+            self.sampler.init(seed=self.seed)
             self.train(iterations)
 
     def train(self, iterations):
@@ -72,8 +79,8 @@ class Trainer:
         for _ in (bar := tqdm(range(int(iterations)), initial=self.iteration, total=self.iteration+iterations)):
             for opt in self.optimizer:
                 opt.zero_grad()
-            cont_data = self.sampler(k=self.k, mode='continuous')
-            disc_data = self.sampler(k=1, mode='discrete', expected=True)
+            cont_data = self.sampler(k=self.k, mode='continuous', seed=self.seed)
+            disc_data = self.sampler(k=1, mode='discrete', seed=self.seed, expected=True)
             # TODO: potential bug
             cont_out = self.discriminator(cont_data, edge_weight=cont_data.edge_weight)
             disc_out = self.discriminator(disc_data, edge_weight=disc_data.edge_weight)
@@ -134,14 +141,14 @@ class Trainer:
 
     @torch.no_grad()
     def quantatitive_baseline(self, **kwargs):
-        return self.quantatitive(sample_fn=lambda: nx.gnp_random_graph(n=self.sampler.n, p=1/self.sampler.n),
+        return self.quantatitive(sample_fn=lambda: nx.gnp_random_graph(n=self.sampler.n, p=1/self.sampler.n, seed=self.seed),
                                  **kwargs)
 
     # TODO: do not rely on dataset for drawing
     @torch.no_grad()
     def evaluate(self, *args, show=False, connected=False, path=None, **kwargs):
         self.sampler.eval()
-        G = self.sampler.sample(*args, **kwargs)
+        G = self.sampler.sample(*args, **kwargs, seed=self.seed)
         if connected:
             G = sorted([G.subgraph(c) for c in nx.connected_components(G)], key=lambda g: g.number_of_nodes())[-1]
             self.print_graph_info(G)
@@ -193,7 +200,7 @@ class Trainer:
 
     def evaluate_neg(self, *args, show_neg_edges=True, **kwargs):
         self.sampler.eval()
-        neg_edge = self.sampler.sample(*args, **kwargs)
+        neg_edge = self.sampler.sample(*args, **kwargs, seed=self.seed)
         G = nx.Graph(self.sampler.edges)
         G.remove_edges_from(neg_edge)
         n = G.number_of_nodes()
