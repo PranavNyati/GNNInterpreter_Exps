@@ -69,11 +69,13 @@ class GraphSampler(nn.Module):
         else:
             self.eta = None
 
-        self.init()
+        self.init(seed=self.seed)
 
     @torch.no_grad()
     def init(self, G=None, eps=1e-4, seed=None):
-        torch.manual_seed(seed)
+        if seed is not None:
+            torch.manual_seed(seed)
+        
         theta = torch.rand(self.m) if G is None else torch.stack([
             torch.tensor(1 - eps if (u, v) in G.edges or (v, u) in G.edges else eps)
             for u, v in self.edge_index.T[:self.m].tolist()
