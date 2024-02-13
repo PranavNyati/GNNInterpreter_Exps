@@ -190,6 +190,8 @@ class GraphSampler(nn.Module):
         A = torch.sigmoid((self.omega + logistic) / self.tau)
         return torch.cat([A, A], dim=0)
 
+
+    ### for sampling of node feature matrix
     def sample_X(self, seed=None, expected=False) -> torch.Tensor:
         """
         TODO

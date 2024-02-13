@@ -193,6 +193,8 @@ class Trainer:
         print(f"{logits=}")
         print(f"{probs=}")
         self.dataset.draw(G, ax=ax)
+        
+        self.dataset.draw_graph(G)
 
     def plot_networkx_graph(self, G):
         pass

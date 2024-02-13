@@ -1,94 +1,146 @@
 import networkx as nx
-import pandas as pd
+import pandas as pandas
 import torch_geometric as pyg
 import matplotlib.pyplot as plt
-
+import pandas as pd
 
 from .base_graph_dataset import BaseGraphDataset
 from .utils import default_ax, unpack_G
 
-
-class MUTAGDataset(BaseGraphDataset):
-
+class MutagenicityDataset(BaseGraphDataset):
+    
     NODE_CLS = {
+
         0: 'C',
-        1: 'N',
-        2: 'O',
-        3: 'F',
-        4: 'I',
-        5: 'Cl',
+        1: 'O',
+        2: 'Cl',
+        3: 'H',
+        4: 'N',
+        5: 'F',
         6: 'Br',
+        7: 'S',
+        8: 'P',
+        9: 'I',
+        10: 'Na',
+        11: 'K',
+        12: 'Li',
+        13: 'Ca',
     }
-
-    # NODE_COLOR = {
-    #     0: 'red',
-    #     1: 'orange',
-    #     2: 'yellow',
-    #     3: 'green',
-    #     4: 'cyan',
-    #     5: 'blue',
-    #     6: 'magenta',
-    # }
-
+    
+    # REV_NODE_MAP = {v: k for k, v in NODE_CLS.items()}
+    REV_NODE_MAP = {
+            'C': 0,
+        'O': 1,
+        'Cl': 2,
+        'H': 3,
+        'N': 4,
+        'F': 5,
+        'Br': 6,
+        'S': 7,
+        'P': 8,
+        'I': 9,
+        'Na': 10,
+        'K': 11,
+        'Li': 12,
+        'Ca': 13
+    }
+    
     NODE_COLOR = {
-        0: 'orange',
-        1: 'magenta',
+        0: 'red',
+        1: 'blue',
         2: 'green',
-        3: 'blue',
-        4: 'cyan',
-        5: 'red',
-        6: 'yellowgreen',
+        3: 'yellow',
+        4: 'orange',
+        5: 'purple',
+        6: 'pink',
+        7: 'brown',
+        8: 'black',
+        9: 'gray',
+        10: 'cyan',
+        11: 'magenta',
+        12: 'olive',
+        13: 'lime'
     }
 
-    GRAPH_CLS = {
-        0: 'nonmutagen',
-        1: 'mutagen',
+    color_element_map = {
+        'red': 'C',
+        'blue': 'O',
+        'green': 'Cl',
+        'yellow': 'H',
+        'orange': 'N',
+        'purple': 'F',
+        'pink': 'Br',
+        'brown': 'S',
+        'black': 'P',
+        'gray': 'I',
+        'cyan': 'Na',
+        'magenta': 'K',
+        'olive': 'Li',
+        'lime': 'Ca'
     }
 
     EDGE_CLS = {
-        0: 'aromatic',
-        1: 'single',
-        2: 'double',
-        3: 'triple',
+        0: 'single',
+        1: 'double',
+        2: 'triple'
     }
 
     EDGE_WIDTH = {
         0: 3,
-        1: 2,
-        2: 4,
-        3: 6,
+        1: 6,
+        2: 9
     }
 
+    # edge_exp_map = {
+    #     0.0: 'single_exp',
+    #     1.0: 'double_exp',
+    #     2.0: 'triple_exp'
+    # }
+
+    # creating a color map for the edges
+    EDGE_COLOR = {
+        0: 'tera cotta',
+        1: 'dark slate gray',
+        2: 'golden'
+    }
+
+    GRAPH_CLS = {
+        0: 'mutagen',
+        1: 'nonmutagen',
+    }
+    
+    
     def __init__(self, *,
-                 name='MUTAG',
-                 url='https://ls11-www.cs.tu-dortmund.de/people/morris/graphkerneldatasets/MUTAG.zip',
+                 name='Mutagenicity',
+                 url='https://www.chrsmrrs.com/graphkerneldatasets/Mutagenicity.zip',
                  **kwargs):
         self.url = url
         super().__init__(name=name, **kwargs)
-
+        
     @property
     def raw_file_names(self):
-        return ["MUTAG/MUTAG_A.txt",
-                "MUTAG/MUTAG_graph_indicator.txt",
-                "MUTAG/MUTAG_graph_labels.txt",
-                "MUTAG/MUTAG_edge_labels.txt",
-                "MUTAG/MUTAG_node_labels.txt"]
+        return ['Mutagenicity/Mutagenicity_A.txt',
+                'Mutagenicity/Mutagenicity_graph_indicator.txt',
+                'Mutagenicity/Mutagenicity_graph_labels.txt',
+                'Mutagenicity/Mutagenicity_node_labels.txt',
+                'Mutagenicity/Mutagenicity_edge_labels.txt']
 
     def download(self):
         pyg.data.download_url(self.url, self.raw_dir)
-        pyg.data.extract_zip(f'{self.raw_dir}/MUTAG.zip', self.raw_dir)
-
+        pyg.data.extract_zip(f'{self.raw_dir}/Mutagenicity.zip', self.raw_dir)
+        
     def generate(self):
         edges = pd.read_csv(self.raw_paths[0], header=None).to_numpy(dtype=int) - 1
         graph_idx = pd.read_csv(self.raw_paths[1], header=None)[0].to_numpy(dtype=int) - 1
-        graph_labels = pd.read_csv(self.raw_paths[2], header=None)[0].to_numpy(dtype=int) > 0
+        graph_labels = pd.read_csv(self.raw_paths[2], header=None)[0].to_numpy(dtype=int) 
         edge_labels = pd.read_csv(self.raw_paths[3], header=None)[0].to_numpy(dtype=int)
-        node_labels = pd.read_csv(self.raw_paths[4], header=None)[0].to_numpy(dtype=int)
+        node_labels = pd.read_csv(self.raw_paths[4], header=None)[0].to_numpy(dtype=int)                                
         super_G = nx.Graph(edges.tolist(), label=graph_labels)
         nx.set_node_attributes(super_G, dict(enumerate(node_labels)), name='label')
         nx.set_node_attributes(super_G, dict(enumerate(graph_idx)), name='graph')
         nx.set_edge_attributes(super_G, dict(zip(zip(*edges.T), edge_labels)), name='label')
         return unpack_G(super_G)
+
 
     # TODO: use EDGE_WIDTH
     @default_ax
@@ -114,7 +166,7 @@ class MUTAGDataset(BaseGraphDataset):
         nx.draw_networkx_edges(G.subgraph(G.nodes), pos, ax=ax, width=6)
         
         # plt.savefig(path)
-
+    
     def draw_graph(self, G):
         
         graph_viz = nx.Graph()
@@ -146,6 +198,7 @@ class MUTAGDataset(BaseGraphDataset):
         pos = nx.spring_layout(graph_viz)
         # nx.draw_networkx(graph_viz, pos, node_color = [node[1]['color'] for node in graph_viz.nodes(data=True)], node_size=500, edge_color = [edge[2]['color'] for edge in graph_viz.edges(data=True)], width = [edge[2]['width'] for edge in graph_viz.edges(data=True)], with_labels=True)
         nx.draw_networkx(graph_viz, pos, node_color = [node[1]['color'] for node in graph_viz.nodes(data=True)],  edge_color = [edge[2]['color'] for edge in graph_viz.edges(data=True)], width = [edge[2]['width'] for edge in graph_viz.edges(data=True)], with_labels=True, font_weight='bold', node_size=300)
-
+        
     def process(self):
         super().process()
+        
