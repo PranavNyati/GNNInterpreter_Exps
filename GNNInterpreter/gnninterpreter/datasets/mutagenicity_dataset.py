@@ -29,7 +29,7 @@ class MutagenicityDataset(BaseGraphDataset):
     
     # REV_NODE_MAP = {v: k for k, v in NODE_CLS.items()}
     REV_NODE_MAP = {
-            'C': 0,
+        'C': 0,
         'O': 1,
         'Cl': 2,
         'H': 3,
@@ -99,9 +99,9 @@ class MutagenicityDataset(BaseGraphDataset):
 
     # creating a color map for the edges
     EDGE_COLOR = {
-        0: 'tera cotta',
-        1: 'dark slate gray',
-        2: 'golden'
+        0: 'black',
+        1: 'red',
+        2: 'blue',
     }
 
     GRAPH_CLS = {
@@ -122,8 +122,8 @@ class MutagenicityDataset(BaseGraphDataset):
         return ['Mutagenicity/Mutagenicity_A.txt',
                 'Mutagenicity/Mutagenicity_graph_indicator.txt',
                 'Mutagenicity/Mutagenicity_graph_labels.txt',
-                'Mutagenicity/Mutagenicity_node_labels.txt',
-                'Mutagenicity/Mutagenicity_edge_labels.txt']
+                'Mutagenicity/Mutagenicity_edge_labels.txt',
+                'Mutagenicity/Mutagenicity_node_labels.txt']
 
     def download(self):
         pyg.data.download_url(self.url, self.raw_dir)
@@ -172,20 +172,19 @@ class MutagenicityDataset(BaseGraphDataset):
         graph_viz = nx.Graph()
         
         for v in G.nodes():
-            graph_viz.add_node(v, {'label': self.NODE_CLS[G.nodes[v]['label']], 'color': self.NODE_COLOR[G.nodes[v]['label']]})
-            
+            # graph_viz.add_node( (v, {'label': self.NODE_CLS[G.nodes[v]['label']], 'color': self.NODE_COLOR[G.nodes[v]['label']]} ) )4
+            graph_viz.add_node( v, label= self.NODE_CLS[G.nodes[v]['label']], color= self.NODE_COLOR[G.nodes[v]['label']] )
+        print("Graph Viz info: ")
+        print("No of nodes: ", graph_viz.number_of_nodes())
+        print("Nodes: ", graph_viz.nodes(data=True))
+                    
         for u, v in G.edges():
-            graph_viz.add_edge(u, v, {'label': self.EDGE_CLS[G[u][v]['label']], 'color': self.EDGE_COLOR[G[u][v]['label']], 'width': self.EDGE_WIDTH[G[u][v]['label']]})
+            graph_viz.add_edge( u, v, label= self.EDGE_CLS[G[u][v]['label']], color= self.EDGE_COLOR[G[u][v]['label']], width= self.EDGE_WIDTH[G[u][v]['label']])
         
         graph_viz.remove_nodes_from(list(nx.isolates(graph_viz)))
         
-        print("Graph Viz info: ")
-        print("No of nodes: ", graph_viz.number_of_nodes())
         print("No of edges: ", graph_viz.number_of_edges())
-        print("Nodes: ", graph_viz.nodes(data=True))
         print("Edges: ", graph_viz.edges(data=True))
-        print("Nodes data: ", graph_viz.nodes.data())
-        print("Edges data: ", graph_viz.edges.data())
         
         
         plt.figure(1, figsize=(15, 10), dpi=60)

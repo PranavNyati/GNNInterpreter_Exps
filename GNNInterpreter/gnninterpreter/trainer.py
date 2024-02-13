@@ -11,8 +11,7 @@ import pickle
 import glob
 import torch.nn.functional as F
 import torch_geometric as pyg
-from typing import Type, TypeVar
-# from graph_sampler import GraphSampler
+
 
 # TODO: refactor
 # from .datasets import *
@@ -192,7 +191,7 @@ class Trainer:
         print(f"{n=} {m=}")
         print(f"{logits=}")
         print(f"{probs=}")
-        self.dataset.draw(G, ax=ax)
+        # self.dataset.draw(G, ax=ax)
         
         self.dataset.draw_graph(G)
 

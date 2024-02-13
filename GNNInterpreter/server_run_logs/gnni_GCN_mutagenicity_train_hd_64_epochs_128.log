@@ -1,0 +1,1283 @@
+Dataset : Mutagenicity
+train base model: train size =  3904 , test size =  433
+#############################################
+Epoch: 000
+
+class idx: 0, class: mutagen, f1: 0.7394438982009888
+class idx: 1, class: nonmutagen, f1: 0.5716220736503601
+class idx: 0, class: mutagen, f1: 0.72265625
+class idx: 1, class: nonmutagen, f1: 0.598870038986206
+
+
+Epoch: 000, Train Loss: 0.6154, Train F1: {'mutagen': 0.7394438982009888, 'nonmutagen': 0.5716220736503601}, Test F1: {'mutagen': 0.72265625, 'nonmutagen': 0.598870038986206} Test Accuracy: 0.6720554272517321
+#############################################
+Epoch: 001
+
+class idx: 0, class: mutagen, f1: 0.7392787337303162
+class idx: 1, class: nonmutagen, f1: 0.7111231088638306
+class idx: 0, class: mutagen, f1: 0.7169811129570007
+class idx: 1, class: nonmutagen, f1: 0.7285068035125732
+
+
+Epoch: 001, Train Loss: 0.5779, Train F1: {'mutagen': 0.7392787337303162, 'nonmutagen': 0.7111231088638306}, Test F1: {'mutagen': 0.7169811129570007, 'nonmutagen': 0.7285068035125732} Test Accuracy: 0.7228637413394919
+#############################################
+Epoch: 002
+
+class idx: 0, class: mutagen, f1: 0.7566959261894226
+class idx: 1, class: nonmutagen, f1: 0.6787518858909607
+class idx: 0, class: mutagen, f1: 0.7299578189849854
+class idx: 1, class: nonmutagen, f1: 0.6734693646430969
+
+
+Epoch: 002, Train Loss: 0.5667, Train F1: {'mutagen': 0.7566959261894226, 'nonmutagen': 0.6787518858909607}, Test F1: {'mutagen': 0.7299578189849854, 'nonmutagen': 0.6734693646430969} Test Accuracy: 0.7043879907621247
+#############################################
+Epoch: 003
+
+class idx: 0, class: mutagen, f1: 0.7570344805717468
+class idx: 1, class: nonmutagen, f1: 0.7331362366676331
+class idx: 0, class: mutagen, f1: 0.7464788556098938
+class idx: 1, class: nonmutagen, f1: 0.7545454502105713
+
+
+Epoch: 003, Train Loss: 0.5481, Train F1: {'mutagen': 0.7570344805717468, 'nonmutagen': 0.7331362366676331}, Test F1: {'mutagen': 0.7464788556098938, 'nonmutagen': 0.7545454502105713} Test Accuracy: 0.7505773672055427
+#############################################
+Epoch: 004
+
+class idx: 0, class: mutagen, f1: 0.7799862623214722
+class idx: 1, class: nonmutagen, f1: 0.7193238139152527
+class idx: 0, class: mutagen, f1: 0.7662337422370911
+class idx: 1, class: nonmutagen, f1: 0.7326732873916626
+
+
+Epoch: 004, Train Loss: 0.5369, Train F1: {'mutagen': 0.7799862623214722, 'nonmutagen': 0.7193238139152527}, Test F1: {'mutagen': 0.7662337422370911, 'nonmutagen': 0.7326732873916626} Test Accuracy: 0.7505773672055427
+#############################################
+Epoch: 005
+
+class idx: 0, class: mutagen, f1: 0.7948331832885742
+class idx: 1, class: nonmutagen, f1: 0.6987037658691406
+class idx: 0, class: mutagen, f1: 0.738095223903656
+class idx: 1, class: nonmutagen, f1: 0.6353591084480286
+
+
+Epoch: 005, Train Loss: 0.5269, Train F1: {'mutagen': 0.7948331832885742, 'nonmutagen': 0.6987037658691406}, Test F1: {'mutagen': 0.738095223903656, 'nonmutagen': 0.6353591084480286} Test Accuracy: 0.6951501154734411
+#############################################
+Epoch: 006
+
+class idx: 0, class: mutagen, f1: 0.7714176177978516
+class idx: 1, class: nonmutagen, f1: 0.5426595211029053
+class idx: 0, class: mutagen, f1: 0.7289048433303833
+class idx: 1, class: nonmutagen, f1: 0.5113268494606018
+
+
+Epoch: 006, Train Loss: 0.5322, Train F1: {'mutagen': 0.7714176177978516, 'nonmutagen': 0.5426595211029053}, Test F1: {'mutagen': 0.7289048433303833, 'nonmutagen': 0.5113268494606018} Test Accuracy: 0.651270207852194
+#############################################
+Epoch: 007
+
+class idx: 0, class: mutagen, f1: 0.7824427485466003
+class idx: 1, class: nonmutagen, f1: 0.747787594795227
+class idx: 0, class: mutagen, f1: 0.7678571343421936
+class idx: 1, class: nonmutagen, f1: 0.7511961460113525
+
+
+Epoch: 007, Train Loss: 0.5189, Train F1: {'mutagen': 0.7824427485466003, 'nonmutagen': 0.747787594795227}, Test F1: {'mutagen': 0.7678571343421936, 'nonmutagen': 0.7511961460113525} Test Accuracy: 0.7598152424942263
+#############################################
+Epoch: 008
+
+class idx: 0, class: mutagen, f1: 0.8056042194366455
+class idx: 1, class: nonmutagen, f1: 0.7259259223937988
+class idx: 0, class: mutagen, f1: 0.7469387650489807
+class idx: 1, class: nonmutagen, f1: 0.6702127456665039
+
+
+Epoch: 008, Train Loss: 0.5100, Train F1: {'mutagen': 0.8056042194366455, 'nonmutagen': 0.7259259223937988}, Test F1: {'mutagen': 0.7469387650489807, 'nonmutagen': 0.6702127456665039} Test Accuracy: 0.7136258660508084
+#############################################
+Epoch: 009
+
+class idx: 0, class: mutagen, f1: 0.7961044311523438
+class idx: 1, class: nonmutagen, f1: 0.6700201034545898
+class idx: 0, class: mutagen, f1: 0.7446393966674805
+class idx: 1, class: nonmutagen, f1: 0.6288951635360718
+
+
+Epoch: 009, Train Loss: 0.5034, Train F1: {'mutagen': 0.7961044311523438, 'nonmutagen': 0.6700201034545898}, Test F1: {'mutagen': 0.7446393966674805, 'nonmutagen': 0.6288951635360718} Test Accuracy: 0.6974595842956121
+#############################################
+Epoch: 010
+
+class idx: 0, class: mutagen, f1: 0.7869722843170166
+class idx: 1, class: nonmutagen, f1: 0.7589407563209534
+class idx: 0, class: mutagen, f1: 0.7853881120681763
+class idx: 1, class: nonmutagen, f1: 0.7803738117218018
+
+
+Epoch: 010, Train Loss: 0.4984, Train F1: {'mutagen': 0.7869722843170166, 'nonmutagen': 0.7589407563209534}, Test F1: {'mutagen': 0.7853881120681763, 'nonmutagen': 0.7803738117218018} Test Accuracy: 0.7829099307159353
+#############################################
+Epoch: 011
+
+class idx: 0, class: mutagen, f1: 0.79666668176651
+class idx: 1, class: nonmutagen, f1: 0.6755319237709045
+class idx: 0, class: mutagen, f1: 0.7578125
+class idx: 1, class: nonmutagen, f1: 0.6497175097465515
+
+
+Epoch: 011, Train Loss: 0.4932, Train F1: {'mutagen': 0.79666668176651, 'nonmutagen': 0.6755319237709045}, Test F1: {'mutagen': 0.7578125, 'nonmutagen': 0.6497175097465515} Test Accuracy: 0.7136258660508084
+#############################################
+Epoch: 012
+
+class idx: 0, class: mutagen, f1: 0.8088630437850952
+class idx: 1, class: nonmutagen, f1: 0.7443113923072815
+class idx: 0, class: mutagen, f1: 0.7637130618095398
+class idx: 1, class: nonmutagen, f1: 0.7142857313156128
+
+
+Epoch: 012, Train Loss: 0.4895, Train F1: {'mutagen': 0.8088630437850952, 'nonmutagen': 0.7443113923072815}, Test F1: {'mutagen': 0.7637130618095398, 'nonmutagen': 0.7142857313156128} Test Accuracy: 0.7413394919168591
+#############################################
+Epoch: 013
+
+class idx: 0, class: mutagen, f1: 0.8065589070320129
+class idx: 1, class: nonmutagen, f1: 0.773888885974884
+class idx: 0, class: mutagen, f1: 0.7991169691085815
+class idx: 1, class: nonmutagen, f1: 0.7796609997749329
+
+
+Epoch: 013, Train Loss: 0.4847, Train F1: {'mutagen': 0.8065589070320129, 'nonmutagen': 0.773888885974884}, Test F1: {'mutagen': 0.7991169691085815, 'nonmutagen': 0.7796609997749329} Test Accuracy: 0.789838337182448
+#############################################
+Epoch: 014
+
+class idx: 0, class: mutagen, f1: 0.8173714280128479
+class idx: 1, class: nonmutagen, f1: 0.7672589421272278
+class idx: 0, class: mutagen, f1: 0.7867494821548462
+class idx: 1, class: nonmutagen, f1: 0.7310705184936523
+
+
+Epoch: 014, Train Loss: 0.4725, Train F1: {'mutagen': 0.8173714280128479, 'nonmutagen': 0.7672589421272278}, Test F1: {'mutagen': 0.7867494821548462, 'nonmutagen': 0.7310705184936523} Test Accuracy: 0.7621247113163973
+#############################################
+Epoch: 015
+
+class idx: 0, class: mutagen, f1: 0.808241605758667
+class idx: 1, class: nonmutagen, f1: 0.7684478163719177
+class idx: 0, class: mutagen, f1: 0.7827957272529602
+class idx: 1, class: nonmutagen, f1: 0.748129665851593
+
+
+Epoch: 015, Train Loss: 0.4654, Train F1: {'mutagen': 0.808241605758667, 'nonmutagen': 0.7684478163719177}, Test F1: {'mutagen': 0.7827957272529602, 'nonmutagen': 0.748129665851593} Test Accuracy: 0.766743648960739
+#############################################
+Epoch: 016
+
+class idx: 0, class: mutagen, f1: 0.8133825659751892
+class idx: 1, class: nonmutagen, f1: 0.7319812774658203
+class idx: 0, class: mutagen, f1: 0.775347888469696
+class idx: 1, class: nonmutagen, f1: 0.6887052059173584
+
+
+Epoch: 016, Train Loss: 0.4696, Train F1: {'mutagen': 0.8133825659751892, 'nonmutagen': 0.7319812774658203}, Test F1: {'mutagen': 0.775347888469696, 'nonmutagen': 0.6887052059173584} Test Accuracy: 0.7390300230946882
+#############################################
+Epoch: 017
+
+class idx: 0, class: mutagen, f1: 0.826223611831665
+class idx: 1, class: nonmutagen, f1: 0.7692307829856873
+class idx: 0, class: mutagen, f1: 0.8098159432411194
+class idx: 1, class: nonmutagen, f1: 0.7533156275749207
+
+
+Epoch: 017, Train Loss: 0.4672, Train F1: {'mutagen': 0.826223611831665, 'nonmutagen': 0.7692307829856873}, Test F1: {'mutagen': 0.8098159432411194, 'nonmutagen': 0.7533156275749207} Test Accuracy: 0.7852193995381063
+#############################################
+Epoch: 018
+
+class idx: 0, class: mutagen, f1: 0.82491135597229
+class idx: 1, class: nonmutagen, f1: 0.7603155374526978
+class idx: 0, class: mutagen, f1: 0.7730061411857605
+class idx: 1, class: nonmutagen, f1: 0.7055702805519104
+
+
+Epoch: 018, Train Loss: 0.4669, Train F1: {'mutagen': 0.82491135597229, 'nonmutagen': 0.7603155374526978}, Test F1: {'mutagen': 0.7730061411857605, 'nonmutagen': 0.7055702805519104} Test Accuracy: 0.74364896073903
+#############################################
+Epoch: 019
+
+class idx: 0, class: mutagen, f1: 0.8233506679534912
+class idx: 1, class: nonmutagen, f1: 0.7456250190734863
+class idx: 0, class: mutagen, f1: 0.7801980376243591
+class idx: 1, class: nonmutagen, f1: 0.692520797252655
+
+
+Epoch: 019, Train Loss: 0.4596, Train F1: {'mutagen': 0.8233506679534912, 'nonmutagen': 0.7456250190734863}, Test F1: {'mutagen': 0.7801980376243591, 'nonmutagen': 0.692520797252655} Test Accuracy: 0.74364896073903
+#############################################
+Epoch: 020
+
+class idx: 0, class: mutagen, f1: 0.8139589428901672
+class idx: 1, class: nonmutagen, f1: 0.7788057327270508
+class idx: 0, class: mutagen, f1: 0.7894737124443054
+class idx: 1, class: nonmutagen, f1: 0.7658536434173584
+
+
+Epoch: 020, Train Loss: 0.4520, Train F1: {'mutagen': 0.8139589428901672, 'nonmutagen': 0.7788057327270508}, Test F1: {'mutagen': 0.7894737124443054, 'nonmutagen': 0.7658536434173584} Test Accuracy: 0.7782909930715936
+#############################################
+Epoch: 021
+
+class idx: 0, class: mutagen, f1: 0.8245972394943237
+class idx: 1, class: nonmutagen, f1: 0.7727138996124268
+class idx: 0, class: mutagen, f1: 0.7782427072525024
+class idx: 1, class: nonmutagen, f1: 0.7268041372299194
+
+
+Epoch: 021, Train Loss: 0.4539, Train F1: {'mutagen': 0.8245972394943237, 'nonmutagen': 0.7727138996124268}, Test F1: {'mutagen': 0.7782427072525024, 'nonmutagen': 0.7268041372299194} Test Accuracy: 0.7551963048498845
+#############################################
+Epoch: 022
+
+class idx: 0, class: mutagen, f1: 0.8274456262588501
+class idx: 1, class: nonmutagen, f1: 0.7753537893295288
+class idx: 0, class: mutagen, f1: 0.8024948239326477
+class idx: 1, class: nonmutagen, f1: 0.7532467246055603
+
+
+Epoch: 022, Train Loss: 0.4511, Train F1: {'mutagen': 0.8274456262588501, 'nonmutagen': 0.7753537893295288}, Test F1: {'mutagen': 0.8024948239326477, 'nonmutagen': 0.7532467246055603} Test Accuracy: 0.7806004618937644
+#############################################
+Epoch: 023
+
+class idx: 0, class: mutagen, f1: 0.8297498822212219
+class idx: 1, class: nonmutagen, f1: 0.7612307667732239
+class idx: 0, class: mutagen, f1: 0.7870182394981384
+class idx: 1, class: nonmutagen, f1: 0.7184986472129822
+
+
+Epoch: 023, Train Loss: 0.4481, Train F1: {'mutagen': 0.8297498822212219, 'nonmutagen': 0.7612307667732239}, Test F1: {'mutagen': 0.7870182394981384, 'nonmutagen': 0.7184986472129822} Test Accuracy: 0.7575057736720554
+#############################################
+Epoch: 024
+
+class idx: 0, class: mutagen, f1: 0.8313306570053101
+class idx: 1, class: nonmutagen, f1: 0.7712733745574951
+class idx: 0, class: mutagen, f1: 0.8032786846160889
+class idx: 1, class: nonmutagen, f1: 0.7460317611694336
+
+
+Epoch: 024, Train Loss: 0.4458, Train F1: {'mutagen': 0.8313306570053101, 'nonmutagen': 0.7712733745574951}, Test F1: {'mutagen': 0.8032786846160889, 'nonmutagen': 0.7460317611694336} Test Accuracy: 0.7782909930715936
+#############################################
+Epoch: 025
+
+class idx: 0, class: mutagen, f1: 0.8311573266983032
+class idx: 1, class: nonmutagen, f1: 0.7680146098136902
+class idx: 0, class: mutagen, f1: 0.8016194105148315
+class idx: 1, class: nonmutagen, f1: 0.7365591526031494
+
+
+Epoch: 025, Train Loss: 0.4456, Train F1: {'mutagen': 0.8311573266983032, 'nonmutagen': 0.7680146098136902}, Test F1: {'mutagen': 0.8016194105148315, 'nonmutagen': 0.7365591526031494} Test Accuracy: 0.7736720554272517
+#############################################
+Epoch: 026
+
+class idx: 0, class: mutagen, f1: 0.8356286287307739
+class idx: 1, class: nonmutagen, f1: 0.7761645317077637
+class idx: 0, class: mutagen, f1: 0.800000011920929
+class idx: 1, class: nonmutagen, f1: 0.7454068064689636
+
+
+Epoch: 026, Train Loss: 0.4410, Train F1: {'mutagen': 0.8356286287307739, 'nonmutagen': 0.7761645317077637}, Test F1: {'mutagen': 0.800000011920929, 'nonmutagen': 0.7454068064689636} Test Accuracy: 0.7759815242494227
+#############################################
+Epoch: 027
+
+class idx: 0, class: mutagen, f1: 0.8400796055793762
+class idx: 1, class: nonmutagen, f1: 0.7800425887107849
+class idx: 0, class: mutagen, f1: 0.7934560179710388
+class idx: 1, class: nonmutagen, f1: 0.73209547996521
+
+
+Epoch: 027, Train Loss: 0.4354, Train F1: {'mutagen': 0.8400796055793762, 'nonmutagen': 0.7800425887107849}, Test F1: {'mutagen': 0.7934560179710388, 'nonmutagen': 0.73209547996521} Test Accuracy: 0.766743648960739
+#############################################
+Epoch: 028
+
+class idx: 0, class: mutagen, f1: 0.8378862738609314
+class idx: 1, class: nonmutagen, f1: 0.7833632826805115
+class idx: 0, class: mutagen, f1: 0.7983871102333069
+class idx: 1, class: nonmutagen, f1: 0.7297297120094299
+
+
+Epoch: 028, Train Loss: 0.4407, Train F1: {'mutagen': 0.8378862738609314, 'nonmutagen': 0.7833632826805115}, Test F1: {'mutagen': 0.7983871102333069, 'nonmutagen': 0.7297297120094299} Test Accuracy: 0.76905311778291
+#############################################
+Epoch: 029
+
+class idx: 0, class: mutagen, f1: 0.8252108693122864
+class idx: 1, class: nonmutagen, f1: 0.789265513420105
+class idx: 0, class: mutagen, f1: 0.7965368032455444
+class idx: 1, class: nonmutagen, f1: 0.7673267126083374
+
+
+Epoch: 029, Train Loss: 0.4341, Train F1: {'mutagen': 0.8252108693122864, 'nonmutagen': 0.789265513420105}, Test F1: {'mutagen': 0.7965368032455444, 'nonmutagen': 0.7673267126083374} Test Accuracy: 0.7829099307159353
+#############################################
+Epoch: 030
+
+class idx: 0, class: mutagen, f1: 0.7943333983421326
+class idx: 1, class: nonmutagen, f1: 0.7891050577163696
+class idx: 0, class: mutagen, f1: 0.7662650346755981
+class idx: 1, class: nonmutagen, f1: 0.7849224209785461
+
+
+Epoch: 030, Train Loss: 0.4407, Train F1: {'mutagen': 0.7943333983421326, 'nonmutagen': 0.7891050577163696}, Test F1: {'mutagen': 0.7662650346755981, 'nonmutagen': 0.7849224209785461} Test Accuracy: 0.7759815242494227
+#############################################
+Epoch: 031
+
+class idx: 0, class: mutagen, f1: 0.8343976140022278
+class idx: 1, class: nonmutagen, f1: 0.7498392462730408
+class idx: 0, class: mutagen, f1: 0.7969052195549011
+class idx: 1, class: nonmutagen, f1: 0.6991404294967651
+
+
+Epoch: 031, Train Loss: 0.4311, Train F1: {'mutagen': 0.8343976140022278, 'nonmutagen': 0.7498392462730408}, Test F1: {'mutagen': 0.7969052195549011, 'nonmutagen': 0.6991404294967651} Test Accuracy: 0.7575057736720554
+#############################################
+Epoch: 032
+
+class idx: 0, class: mutagen, f1: 0.8395842909812927
+class idx: 1, class: nonmutagen, f1: 0.7900650501251221
+class idx: 0, class: mutagen, f1: 0.806584358215332
+class idx: 1, class: nonmutagen, f1: 0.7526316046714783
+
+
+Epoch: 032, Train Loss: 0.4381, Train F1: {'mutagen': 0.8395842909812927, 'nonmutagen': 0.7900650501251221}, Test F1: {'mutagen': 0.806584358215332, 'nonmutagen': 0.7526316046714783} Test Accuracy: 0.7829099307159353
+#############################################
+Epoch: 033
+
+class idx: 0, class: mutagen, f1: 0.840036153793335
+class idx: 1, class: nonmutagen, f1: 0.7906563878059387
+class idx: 0, class: mutagen, f1: 0.8115941882133484
+class idx: 1, class: nonmutagen, f1: 0.7624021172523499
+
+
+Epoch: 033, Train Loss: 0.4231, Train F1: {'mutagen': 0.840036153793335, 'nonmutagen': 0.7906563878059387}, Test F1: {'mutagen': 0.8115941882133484, 'nonmutagen': 0.7624021172523499} Test Accuracy: 0.789838337182448
+#############################################
+Epoch: 034
+
+class idx: 0, class: mutagen, f1: 0.834222137928009
+class idx: 1, class: nonmutagen, f1: 0.7954220175743103
+class idx: 0, class: mutagen, f1: 0.8154506683349609
+class idx: 1, class: nonmutagen, f1: 0.7850000262260437
+
+
+Epoch: 034, Train Loss: 0.4199, Train F1: {'mutagen': 0.834222137928009, 'nonmutagen': 0.7954220175743103}, Test F1: {'mutagen': 0.8154506683349609, 'nonmutagen': 0.7850000262260437} Test Accuracy: 0.8013856812933026
+#############################################
+Epoch: 035
+
+class idx: 0, class: mutagen, f1: 0.8449767231941223
+class idx: 1, class: nonmutagen, f1: 0.7881175875663757
+class idx: 0, class: mutagen, f1: 0.8016194105148315
+class idx: 1, class: nonmutagen, f1: 0.7365591526031494
+
+
+Epoch: 035, Train Loss: 0.4202, Train F1: {'mutagen': 0.8449767231941223, 'nonmutagen': 0.7881175875663757}, Test F1: {'mutagen': 0.8016194105148315, 'nonmutagen': 0.7365591526031494} Test Accuracy: 0.7736720554272517
+#############################################
+Epoch: 036
+
+class idx: 0, class: mutagen, f1: 0.8383259177207947
+class idx: 1, class: nonmutagen, f1: 0.7545952796936035
+class idx: 0, class: mutagen, f1: 0.7797271013259888
+class idx: 1, class: nonmutagen, f1: 0.6798866987228394
+
+
+Epoch: 036, Train Loss: 0.4142, Train F1: {'mutagen': 0.8383259177207947, 'nonmutagen': 0.7545952796936035}, Test F1: {'mutagen': 0.7797271013259888, 'nonmutagen': 0.6798866987228394} Test Accuracy: 0.7390300230946882
+#############################################
+Epoch: 037
+
+class idx: 0, class: mutagen, f1: 0.8500635027885437
+class idx: 1, class: nonmutagen, f1: 0.7705767750740051
+class idx: 0, class: mutagen, f1: 0.7891682982444763
+class idx: 1, class: nonmutagen, f1: 0.68767911195755
+
+
+Epoch: 037, Train Loss: 0.4124, Train F1: {'mutagen': 0.8500635027885437, 'nonmutagen': 0.7705767750740051}, Test F1: {'mutagen': 0.7891682982444763, 'nonmutagen': 0.68767911195755} Test Accuracy: 0.7482678983833718
+#############################################
+Epoch: 038
+
+class idx: 0, class: mutagen, f1: 0.8497432470321655
+class idx: 1, class: nonmutagen, f1: 0.7978371977806091
+class idx: 0, class: mutagen, f1: 0.8104838728904724
+class idx: 1, class: nonmutagen, f1: 0.745945930480957
+
+
+Epoch: 038, Train Loss: 0.4135, Train F1: {'mutagen': 0.8497432470321655, 'nonmutagen': 0.7978371977806091}, Test F1: {'mutagen': 0.8104838728904724, 'nonmutagen': 0.745945930480957} Test Accuracy: 0.7829099307159353
+#############################################
+Epoch: 039
+
+class idx: 0, class: mutagen, f1: 0.8546433448791504
+class idx: 1, class: nonmutagen, f1: 0.8065671920776367
+class idx: 0, class: mutagen, f1: 0.8122448921203613
+class idx: 1, class: nonmutagen, f1: 0.7553191781044006
+
+
+Epoch: 039, Train Loss: 0.4105, Train F1: {'mutagen': 0.8546433448791504, 'nonmutagen': 0.8065671920776367}, Test F1: {'mutagen': 0.8122448921203613, 'nonmutagen': 0.7553191781044006} Test Accuracy: 0.7875288683602771
+#############################################
+Epoch: 040
+
+class idx: 0, class: mutagen, f1: 0.8517162203788757
+class idx: 1, class: nonmutagen, f1: 0.8115183115005493
+class idx: 0, class: mutagen, f1: 0.8227847814559937
+class idx: 1, class: nonmutagen, f1: 0.7857142686843872
+
+
+Epoch: 040, Train Loss: 0.4158, Train F1: {'mutagen': 0.8517162203788757, 'nonmutagen': 0.8115183115005493}, Test F1: {'mutagen': 0.8227847814559937, 'nonmutagen': 0.7857142686843872} Test Accuracy: 0.8060046189376443
+#############################################
+Epoch: 041
+
+class idx: 0, class: mutagen, f1: 0.8358913660049438
+class idx: 1, class: nonmutagen, f1: 0.8054856061935425
+class idx: 0, class: mutagen, f1: 0.8263736367225647
+class idx: 1, class: nonmutagen, f1: 0.8077858686447144
+
+
+Epoch: 041, Train Loss: 0.4096, Train F1: {'mutagen': 0.8358913660049438, 'nonmutagen': 0.8054856061935425}, Test F1: {'mutagen': 0.8263736367225647, 'nonmutagen': 0.8077858686447144} Test Accuracy: 0.8175519630484989
+#############################################
+Epoch: 042
+
+class idx: 0, class: mutagen, f1: 0.8596250414848328
+class idx: 1, class: nonmutagen, f1: 0.8211997747421265
+class idx: 0, class: mutagen, f1: 0.8117154836654663
+class idx: 1, class: nonmutagen, f1: 0.7680412530899048
+
+
+Epoch: 042, Train Loss: 0.4100, Train F1: {'mutagen': 0.8596250414848328, 'nonmutagen': 0.8211997747421265}, Test F1: {'mutagen': 0.8117154836654663, 'nonmutagen': 0.7680412530899048} Test Accuracy: 0.792147806004619
+#############################################
+Epoch: 043
+
+class idx: 0, class: mutagen, f1: 0.8468580842018127
+class idx: 1, class: nonmutagen, f1: 0.7548301219940186
+class idx: 0, class: mutagen, f1: 0.7870722413063049
+class idx: 1, class: nonmutagen, f1: 0.6705882549285889
+
+
+Epoch: 043, Train Loss: 0.4089, Train F1: {'mutagen': 0.8468580842018127, 'nonmutagen': 0.7548301219940186}, Test F1: {'mutagen': 0.7870722413063049, 'nonmutagen': 0.6705882549285889} Test Accuracy: 0.7413394919168591
+#############################################
+Epoch: 044
+
+class idx: 0, class: mutagen, f1: 0.835778534412384
+class idx: 1, class: nonmutagen, f1: 0.8062534928321838
+class idx: 0, class: mutagen, f1: 0.8235294222831726
+class idx: 1, class: nonmutagen, f1: 0.8009827733039856
+
+
+Epoch: 044, Train Loss: 0.4052, Train F1: {'mutagen': 0.835778534412384, 'nonmutagen': 0.8062534928321838}, Test F1: {'mutagen': 0.8235294222831726, 'nonmutagen': 0.8009827733039856} Test Accuracy: 0.812933025404157
+#############################################
+Epoch: 045
+
+class idx: 0, class: mutagen, f1: 0.8522701263427734
+class idx: 1, class: nonmutagen, f1: 0.8152205348014832
+class idx: 0, class: mutagen, f1: 0.8245242834091187
+class idx: 1, class: nonmutagen, f1: 0.7888040542602539
+
+
+Epoch: 045, Train Loss: 0.4017, Train F1: {'mutagen': 0.8522701263427734, 'nonmutagen': 0.8152205348014832}, Test F1: {'mutagen': 0.8245242834091187, 'nonmutagen': 0.7888040542602539} Test Accuracy: 0.8083140877598153
+#############################################
+Epoch: 046
+
+class idx: 0, class: mutagen, f1: 0.8545246124267578
+class idx: 1, class: nonmutagen, f1: 0.8155677914619446
+class idx: 0, class: mutagen, f1: 0.8344085812568665
+class idx: 1, class: nonmutagen, f1: 0.8079800605773926
+
+
+Epoch: 046, Train Loss: 0.4026, Train F1: {'mutagen': 0.8545246124267578, 'nonmutagen': 0.8155677914619446}, Test F1: {'mutagen': 0.8344085812568665, 'nonmutagen': 0.8079800605773926} Test Accuracy: 0.8221709006928406
+#############################################
+Epoch: 047
+
+class idx: 0, class: mutagen, f1: 0.8572707176208496
+class idx: 1, class: nonmutagen, f1: 0.8088675737380981
+class idx: 0, class: mutagen, f1: 0.7949259877204895
+class idx: 1, class: nonmutagen, f1: 0.7531806826591492
+
+
+Epoch: 047, Train Loss: 0.4034, Train F1: {'mutagen': 0.8572707176208496, 'nonmutagen': 0.8088675737380981}, Test F1: {'mutagen': 0.7949259877204895, 'nonmutagen': 0.7531806826591492} Test Accuracy: 0.7759815242494227
+#############################################
+Epoch: 048
+
+class idx: 0, class: mutagen, f1: 0.8507865071296692
+class idx: 1, class: nonmutagen, f1: 0.8022632598876953
+class idx: 0, class: mutagen, f1: 0.8075313568115234
+class idx: 1, class: nonmutagen, f1: 0.7628865838050842
+
+
+Epoch: 048, Train Loss: 0.4071, Train F1: {'mutagen': 0.8507865071296692, 'nonmutagen': 0.8022632598876953}, Test F1: {'mutagen': 0.8075313568115234, 'nonmutagen': 0.7628865838050842} Test Accuracy: 0.7875288683602771
+#############################################
+Epoch: 049
+
+class idx: 0, class: mutagen, f1: 0.8432670831680298
+class idx: 1, class: nonmutagen, f1: 0.783404529094696
+class idx: 0, class: mutagen, f1: 0.7797979712486267
+class idx: 1, class: nonmutagen, f1: 0.7061994671821594
+
+
+Epoch: 049, Train Loss: 0.3949, Train F1: {'mutagen': 0.8432670831680298, 'nonmutagen': 0.783404529094696}, Test F1: {'mutagen': 0.7797979712486267, 'nonmutagen': 0.7061994671821594} Test Accuracy: 0.7482678983833718
+#############################################
+Epoch: 050
+
+class idx: 0, class: mutagen, f1: 0.8535168766975403
+class idx: 1, class: nonmutagen, f1: 0.7844254374504089
+class idx: 0, class: mutagen, f1: 0.7952286005020142
+class idx: 1, class: nonmutagen, f1: 0.7162534594535828
+
+
+Epoch: 050, Train Loss: 0.3946, Train F1: {'mutagen': 0.8535168766975403, 'nonmutagen': 0.7844254374504089}, Test F1: {'mutagen': 0.7952286005020142, 'nonmutagen': 0.7162534594535828} Test Accuracy: 0.7621247113163973
+#############################################
+Epoch: 051
+
+class idx: 0, class: mutagen, f1: 0.8611295819282532
+class idx: 1, class: nonmutagen, f1: 0.8095961213111877
+class idx: 0, class: mutagen, f1: 0.7916666865348816
+class idx: 1, class: nonmutagen, f1: 0.7409326434135437
+
+
+Epoch: 051, Train Loss: 0.3926, Train F1: {'mutagen': 0.8611295819282532, 'nonmutagen': 0.8095961213111877}, Test F1: {'mutagen': 0.7916666865348816, 'nonmutagen': 0.7409326434135437} Test Accuracy: 0.76905311778291
+#############################################
+Epoch: 052
+
+class idx: 0, class: mutagen, f1: 0.8588235378265381
+class idx: 1, class: nonmutagen, f1: 0.7986326813697815
+class idx: 0, class: mutagen, f1: 0.8065173029899597
+class idx: 1, class: nonmutagen, f1: 0.746666669845581
+
+
+Epoch: 052, Train Loss: 0.3991, Train F1: {'mutagen': 0.8588235378265381, 'nonmutagen': 0.7986326813697815}, Test F1: {'mutagen': 0.8065173029899597, 'nonmutagen': 0.746666669845581} Test Accuracy: 0.7806004618937644
+#############################################
+Epoch: 053
+
+class idx: 0, class: mutagen, f1: 0.8480222225189209
+class idx: 1, class: nonmutagen, f1: 0.811477780342102
+class idx: 0, class: mutagen, f1: 0.800000011920929
+class idx: 1, class: nonmutagen, f1: 0.7680798172950745
+
+
+Epoch: 053, Train Loss: 0.3910, Train F1: {'mutagen': 0.8480222225189209, 'nonmutagen': 0.811477780342102}, Test F1: {'mutagen': 0.800000011920929, 'nonmutagen': 0.7680798172950745} Test Accuracy: 0.7852193995381063
+#############################################
+Epoch: 054
+
+class idx: 0, class: mutagen, f1: 0.8642143607139587
+class idx: 1, class: nonmutagen, f1: 0.8243243098258972
+class idx: 0, class: mutagen, f1: 0.8099173307418823
+class idx: 1, class: nonmutagen, f1: 0.7591623067855835
+
+
+Epoch: 054, Train Loss: 0.3903, Train F1: {'mutagen': 0.8642143607139587, 'nonmutagen': 0.8243243098258972}, Test F1: {'mutagen': 0.8099173307418823, 'nonmutagen': 0.7591623067855835} Test Accuracy: 0.7875288683602771
+#############################################
+Epoch: 055
+
+class idx: 0, class: mutagen, f1: 0.8515976071357727
+class idx: 1, class: nonmutagen, f1: 0.8250069618225098
+class idx: 0, class: mutagen, f1: 0.8358862400054932
+class idx: 1, class: nonmutagen, f1: 0.8166258931159973
+
+
+Epoch: 055, Train Loss: 0.3844, Train F1: {'mutagen': 0.8515976071357727, 'nonmutagen': 0.8250069618225098}, Test F1: {'mutagen': 0.8358862400054932, 'nonmutagen': 0.8166258931159973} Test Accuracy: 0.8267898383371824
+#############################################
+Epoch: 056
+
+class idx: 0, class: mutagen, f1: 0.8545288443565369
+class idx: 1, class: nonmutagen, f1: 0.8149010539054871
+class idx: 0, class: mutagen, f1: 0.7789473533630371
+class idx: 1, class: nonmutagen, f1: 0.7314578294754028
+
+
+Epoch: 056, Train Loss: 0.3906, Train F1: {'mutagen': 0.8545288443565369, 'nonmutagen': 0.8149010539054871}, Test F1: {'mutagen': 0.7789473533630371, 'nonmutagen': 0.7314578294754028} Test Accuracy: 0.7575057736720554
+#############################################
+Epoch: 057
+
+class idx: 0, class: mutagen, f1: 0.8612146377563477
+class idx: 1, class: nonmutagen, f1: 0.805050790309906
+class idx: 0, class: mutagen, f1: 0.8056679964065552
+class idx: 1, class: nonmutagen, f1: 0.7419354915618896
+
+
+Epoch: 057, Train Loss: 0.3854, Train F1: {'mutagen': 0.8612146377563477, 'nonmutagen': 0.805050790309906}, Test F1: {'mutagen': 0.8056679964065552, 'nonmutagen': 0.7419354915618896} Test Accuracy: 0.7782909930715936
+#############################################
+Epoch: 058
+
+class idx: 0, class: mutagen, f1: 0.8373891115188599
+class idx: 1, class: nonmutagen, f1: 0.79038405418396
+class idx: 0, class: mutagen, f1: 0.7881355881690979
+class idx: 1, class: nonmutagen, f1: 0.7461928725242615
+
+
+Epoch: 058, Train Loss: 0.3886, Train F1: {'mutagen': 0.8373891115188599, 'nonmutagen': 0.79038405418396}, Test F1: {'mutagen': 0.7881355881690979, 'nonmutagen': 0.7461928725242615} Test Accuracy: 0.76905311778291
+#############################################
+Epoch: 059
+
+class idx: 0, class: mutagen, f1: 0.8459693193435669
+class idx: 1, class: nonmutagen, f1: 0.8236263990402222
+class idx: 0, class: mutagen, f1: 0.8306998014450073
+class idx: 1, class: nonmutagen, f1: 0.8226950168609619
+
+
+Epoch: 059, Train Loss: 0.3883, Train F1: {'mutagen': 0.8459693193435669, 'nonmutagen': 0.8236263990402222}, Test F1: {'mutagen': 0.8306998014450073, 'nonmutagen': 0.8226950168609619} Test Accuracy: 0.8267898383371824
+#############################################
+Epoch: 060
+
+class idx: 0, class: mutagen, f1: 0.8530631065368652
+class idx: 1, class: nonmutagen, f1: 0.8159261345863342
+class idx: 0, class: mutagen, f1: 0.8318965435028076
+class idx: 1, class: nonmutagen, f1: 0.8059701323509216
+
+
+Epoch: 060, Train Loss: 0.3795, Train F1: {'mutagen': 0.8530631065368652, 'nonmutagen': 0.8159261345863342}, Test F1: {'mutagen': 0.8318965435028076, 'nonmutagen': 0.8059701323509216} Test Accuracy: 0.8198614318706697
+#############################################
+Epoch: 061
+
+class idx: 0, class: mutagen, f1: 0.8726796507835388
+class idx: 1, class: nonmutagen, f1: 0.8194487690925598
+class idx: 0, class: mutagen, f1: 0.800804853439331
+class idx: 1, class: nonmutagen, f1: 0.7317073345184326
+
+
+Epoch: 061, Train Loss: 0.3868, Train F1: {'mutagen': 0.8726796507835388, 'nonmutagen': 0.8194487690925598}, Test F1: {'mutagen': 0.800804853439331, 'nonmutagen': 0.7317073345184326} Test Accuracy: 0.7713625866050808
+#############################################
+Epoch: 062
+
+class idx: 0, class: mutagen, f1: 0.8449427485466003
+class idx: 1, class: nonmutagen, f1: 0.8202433586120605
+class idx: 0, class: mutagen, f1: 0.801822304725647
+class idx: 1, class: nonmutagen, f1: 0.7962529063224792
+
+
+Epoch: 062, Train Loss: 0.3806, Train F1: {'mutagen': 0.8449427485466003, 'nonmutagen': 0.8202433586120605}, Test F1: {'mutagen': 0.801822304725647, 'nonmutagen': 0.7962529063224792} Test Accuracy: 0.7990762124711316
+#############################################
+Epoch: 063
+
+class idx: 0, class: mutagen, f1: 0.8696041107177734
+class idx: 1, class: nonmutagen, f1: 0.82529217004776
+class idx: 0, class: mutagen, f1: 0.8098159432411194
+class idx: 1, class: nonmutagen, f1: 0.7533156275749207
+
+
+Epoch: 063, Train Loss: 0.3753, Train F1: {'mutagen': 0.8696041107177734, 'nonmutagen': 0.82529217004776}, Test F1: {'mutagen': 0.8098159432411194, 'nonmutagen': 0.7533156275749207} Test Accuracy: 0.7852193995381063
+#############################################
+Epoch: 064
+
+class idx: 0, class: mutagen, f1: 0.863072395324707
+class idx: 1, class: nonmutagen, f1: 0.8201481699943542
+class idx: 0, class: mutagen, f1: 0.818371593952179
+class idx: 1, class: nonmutagen, f1: 0.7751938104629517
+
+
+Epoch: 064, Train Loss: 0.3773, Train F1: {'mutagen': 0.863072395324707, 'nonmutagen': 0.8201481699943542}, Test F1: {'mutagen': 0.818371593952179, 'nonmutagen': 0.7751938104629517} Test Accuracy: 0.7990762124711316
+#############################################
+Epoch: 065
+
+class idx: 0, class: mutagen, f1: 0.8755365014076233
+class idx: 1, class: nonmutagen, f1: 0.8370304703712463
+class idx: 0, class: mutagen, f1: 0.8218029141426086
+class idx: 1, class: nonmutagen, f1: 0.7814909815788269
+
+
+Epoch: 065, Train Loss: 0.3786, Train F1: {'mutagen': 0.8755365014076233, 'nonmutagen': 0.8370304703712463}, Test F1: {'mutagen': 0.8218029141426086, 'nonmutagen': 0.7814909815788269} Test Accuracy: 0.8036951501154734
+#############################################
+Epoch: 066
+
+class idx: 0, class: mutagen, f1: 0.8701502680778503
+class idx: 1, class: nonmutagen, f1: 0.8271125555038452
+class idx: 0, class: mutagen, f1: 0.7843942642211914
+class idx: 1, class: nonmutagen, f1: 0.7229551672935486
+
+
+Epoch: 066, Train Loss: 0.3748, Train F1: {'mutagen': 0.8701502680778503, 'nonmutagen': 0.8271125555038452}, Test F1: {'mutagen': 0.7843942642211914, 'nonmutagen': 0.7229551672935486} Test Accuracy: 0.7575057736720554
+#############################################
+Epoch: 067
+
+class idx: 0, class: mutagen, f1: 0.8616223335266113
+class idx: 1, class: nonmutagen, f1: 0.8212503790855408
+class idx: 0, class: mutagen, f1: 0.817427396774292
+class idx: 1, class: nonmutagen, f1: 0.7708333134651184
+
+
+Epoch: 067, Train Loss: 0.3708, Train F1: {'mutagen': 0.8616223335266113, 'nonmutagen': 0.8212503790855408}, Test F1: {'mutagen': 0.817427396774292, 'nonmutagen': 0.7708333134651184} Test Accuracy: 0.7967667436489607
+#############################################
+Epoch: 068
+
+class idx: 0, class: mutagen, f1: 0.8706456422805786
+class idx: 1, class: nonmutagen, f1: 0.8233868479728699
+class idx: 0, class: mutagen, f1: 0.8134171962738037
+class idx: 1, class: nonmutagen, f1: 0.7712082266807556
+
+
+Epoch: 068, Train Loss: 0.3663, Train F1: {'mutagen': 0.8706456422805786, 'nonmutagen': 0.8233868479728699}, Test F1: {'mutagen': 0.8134171962738037, 'nonmutagen': 0.7712082266807556} Test Accuracy: 0.7944572748267898
+#############################################
+Epoch: 069
+
+class idx: 0, class: mutagen, f1: 0.8691926002502441
+class idx: 1, class: nonmutagen, f1: 0.8280972242355347
+class idx: 0, class: mutagen, f1: 0.8290598392486572
+class idx: 1, class: nonmutagen, f1: 0.7989949584007263
+
+
+Epoch: 069, Train Loss: 0.3745, Train F1: {'mutagen': 0.8691926002502441, 'nonmutagen': 0.8280972242355347}, Test F1: {'mutagen': 0.8290598392486572, 'nonmutagen': 0.7989949584007263} Test Accuracy: 0.815242494226328
+#############################################
+Epoch: 070
+
+class idx: 0, class: mutagen, f1: 0.8621332049369812
+class idx: 1, class: nonmutagen, f1: 0.8315310478210449
+class idx: 0, class: mutagen, f1: 0.8286334276199341
+class idx: 1, class: nonmutagen, f1: 0.8049382567405701
+
+
+Epoch: 070, Train Loss: 0.3663, Train F1: {'mutagen': 0.8621332049369812, 'nonmutagen': 0.8315310478210449}, Test F1: {'mutagen': 0.8286334276199341, 'nonmutagen': 0.8049382567405701} Test Accuracy: 0.8175519630484989
+#############################################
+Epoch: 071
+
+class idx: 0, class: mutagen, f1: 0.8670622110366821
+class idx: 1, class: nonmutagen, f1: 0.8142462372779846
+class idx: 0, class: mutagen, f1: 0.7991718649864197
+class idx: 1, class: nonmutagen, f1: 0.7467362880706787
+
+
+Epoch: 071, Train Loss: 0.3601, Train F1: {'mutagen': 0.8670622110366821, 'nonmutagen': 0.8142462372779846}, Test F1: {'mutagen': 0.7991718649864197, 'nonmutagen': 0.7467362880706787} Test Accuracy: 0.7759815242494227
+#############################################
+Epoch: 072
+
+class idx: 0, class: mutagen, f1: 0.8593103289604187
+class idx: 1, class: nonmutagen, f1: 0.8230190873146057
+class idx: 0, class: mutagen, f1: 0.8059701323509216
+class idx: 1, class: nonmutagen, f1: 0.7707808613777161
+
+
+Epoch: 072, Train Loss: 0.3671, Train F1: {'mutagen': 0.8593103289604187, 'nonmutagen': 0.8230190873146057}, Test F1: {'mutagen': 0.8059701323509216, 'nonmutagen': 0.7707808613777161} Test Accuracy: 0.789838337182448
+#############################################
+Epoch: 073
+
+class idx: 0, class: mutagen, f1: 0.8636900782585144
+class idx: 1, class: nonmutagen, f1: 0.8386014103889465
+class idx: 0, class: mutagen, f1: 0.8070953488349915
+class idx: 1, class: nonmutagen, f1: 0.7903614640235901
+
+
+Epoch: 073, Train Loss: 0.3606, Train F1: {'mutagen': 0.8636900782585144, 'nonmutagen': 0.8386014103889465}, Test F1: {'mutagen': 0.8070953488349915, 'nonmutagen': 0.7903614640235901} Test Accuracy: 0.7990762124711316
+#############################################
+Epoch: 074
+
+class idx: 0, class: mutagen, f1: 0.8529620170593262
+class idx: 1, class: nonmutagen, f1: 0.8255390524864197
+class idx: 0, class: mutagen, f1: 0.8114035129547119
+class idx: 1, class: nonmutagen, f1: 0.790243923664093
+
+
+Epoch: 074, Train Loss: 0.3573, Train F1: {'mutagen': 0.8529620170593262, 'nonmutagen': 0.8255390524864197}, Test F1: {'mutagen': 0.8114035129547119, 'nonmutagen': 0.790243923664093} Test Accuracy: 0.8013856812933026
+#############################################
+Epoch: 075
+
+class idx: 0, class: mutagen, f1: 0.8657861351966858
+class idx: 1, class: nonmutagen, f1: 0.7976878881454468
+class idx: 0, class: mutagen, f1: 0.7850098609924316
+class idx: 1, class: nonmutagen, f1: 0.6963788270950317
+
+
+Epoch: 075, Train Loss: 0.3564, Train F1: {'mutagen': 0.8657861351966858, 'nonmutagen': 0.7976878881454468}, Test F1: {'mutagen': 0.7850098609924316, 'nonmutagen': 0.6963788270950317} Test Accuracy: 0.7482678983833718
+#############################################
+Epoch: 076
+
+class idx: 0, class: mutagen, f1: 0.8448108434677124
+class idx: 1, class: nonmutagen, f1: 0.8262757658958435
+class idx: 0, class: mutagen, f1: 0.7954545617103577
+class idx: 1, class: nonmutagen, f1: 0.7887324094772339
+
+
+Epoch: 076, Train Loss: 0.3543, Train F1: {'mutagen': 0.8448108434677124, 'nonmutagen': 0.8262757658958435}, Test F1: {'mutagen': 0.7954545617103577, 'nonmutagen': 0.7887324094772339} Test Accuracy: 0.792147806004619
+#############################################
+Epoch: 077
+
+class idx: 0, class: mutagen, f1: 0.867854654788971
+class idx: 1, class: nonmutagen, f1: 0.8362489342689514
+class idx: 0, class: mutagen, f1: 0.8114035129547119
+class idx: 1, class: nonmutagen, f1: 0.790243923664093
+
+
+Epoch: 077, Train Loss: 0.3650, Train F1: {'mutagen': 0.867854654788971, 'nonmutagen': 0.8362489342689514}, Test F1: {'mutagen': 0.8114035129547119, 'nonmutagen': 0.790243923664093} Test Accuracy: 0.8013856812933026
+#############################################
+Epoch: 078
+
+class idx: 0, class: mutagen, f1: 0.8689309358596802
+class idx: 1, class: nonmutagen, f1: 0.8319205045700073
+class idx: 0, class: mutagen, f1: 0.8042105436325073
+class idx: 1, class: nonmutagen, f1: 0.7621483206748962
+
+
+Epoch: 078, Train Loss: 0.3579, Train F1: {'mutagen': 0.8689309358596802, 'nonmutagen': 0.8319205045700073}, Test F1: {'mutagen': 0.8042105436325073, 'nonmutagen': 0.7621483206748962} Test Accuracy: 0.7852193995381063
+#############################################
+Epoch: 079
+
+class idx: 0, class: mutagen, f1: 0.8824455142021179
+class idx: 1, class: nonmutagen, f1: 0.8442988991737366
+class idx: 0, class: mutagen, f1: 0.7966101765632629
+class idx: 1, class: nonmutagen, f1: 0.7563451528549194
+
+
+Epoch: 079, Train Loss: 0.3548, Train F1: {'mutagen': 0.8824455142021179, 'nonmutagen': 0.8442988991737366}, Test F1: {'mutagen': 0.7966101765632629, 'nonmutagen': 0.7563451528549194} Test Accuracy: 0.7782909930715936
+#############################################
+Epoch: 080
+
+class idx: 0, class: mutagen, f1: 0.8675717711448669
+class idx: 1, class: nonmutagen, f1: 0.8205128312110901
+class idx: 0, class: mutagen, f1: 0.8206185698509216
+class idx: 1, class: nonmutagen, f1: 0.7716535329818726
+
+
+Epoch: 080, Train Loss: 0.3555, Train F1: {'mutagen': 0.8675717711448669, 'nonmutagen': 0.8205128312110901}, Test F1: {'mutagen': 0.8206185698509216, 'nonmutagen': 0.7716535329818726} Test Accuracy: 0.7990762124711316
+#############################################
+Epoch: 081
+
+class idx: 0, class: mutagen, f1: 0.8769716024398804
+class idx: 1, class: nonmutagen, f1: 0.837982177734375
+class idx: 0, class: mutagen, f1: 0.8149688243865967
+class idx: 1, class: nonmutagen, f1: 0.768831193447113
+
+
+Epoch: 081, Train Loss: 0.3508, Train F1: {'mutagen': 0.8769716024398804, 'nonmutagen': 0.837982177734375}, Test F1: {'mutagen': 0.8149688243865967, 'nonmutagen': 0.768831193447113} Test Accuracy: 0.7944572748267898
+#############################################
+Epoch: 082
+
+class idx: 0, class: mutagen, f1: 0.8803380727767944
+class idx: 1, class: nonmutagen, f1: 0.8375604152679443
+class idx: 0, class: mutagen, f1: 0.8049281239509583
+class idx: 1, class: nonmutagen, f1: 0.7493403553962708
+
+
+Epoch: 082, Train Loss: 0.3567, Train F1: {'mutagen': 0.8803380727767944, 'nonmutagen': 0.8375604152679443}, Test F1: {'mutagen': 0.8049281239509583, 'nonmutagen': 0.7493403553962708} Test Accuracy: 0.7806004618937644
+#############################################
+Epoch: 083
+
+class idx: 0, class: mutagen, f1: 0.8816234469413757
+class idx: 1, class: nonmutagen, f1: 0.8443521857261658
+class idx: 0, class: mutagen, f1: 0.8057851195335388
+class idx: 1, class: nonmutagen, f1: 0.753926694393158
+
+
+Epoch: 083, Train Loss: 0.3540, Train F1: {'mutagen': 0.8816234469413757, 'nonmutagen': 0.8443521857261658}, Test F1: {'mutagen': 0.8057851195335388, 'nonmutagen': 0.753926694393158} Test Accuracy: 0.7829099307159353
+#############################################
+Epoch: 084
+
+class idx: 0, class: mutagen, f1: 0.8812894821166992
+class idx: 1, class: nonmutagen, f1: 0.8305875062942505
+class idx: 0, class: mutagen, f1: 0.7983871102333069
+class idx: 1, class: nonmutagen, f1: 0.7297297120094299
+
+
+Epoch: 084, Train Loss: 0.3453, Train F1: {'mutagen': 0.8812894821166992, 'nonmutagen': 0.8305875062942505}, Test F1: {'mutagen': 0.7983871102333069, 'nonmutagen': 0.7297297120094299} Test Accuracy: 0.76905311778291
+#############################################
+Epoch: 085
+
+class idx: 0, class: mutagen, f1: 0.8661823272705078
+class idx: 1, class: nonmutagen, f1: 0.8387461304664612
+class idx: 0, class: mutagen, f1: 0.812095046043396
+class idx: 1, class: nonmutagen, f1: 0.7841191291809082
+
+
+Epoch: 085, Train Loss: 0.3478, Train F1: {'mutagen': 0.8661823272705078, 'nonmutagen': 0.8387461304664612}, Test F1: {'mutagen': 0.812095046043396, 'nonmutagen': 0.7841191291809082} Test Accuracy: 0.7990762124711316
+#############################################
+Epoch: 086
+
+class idx: 0, class: mutagen, f1: 0.8762526512145996
+class idx: 1, class: nonmutagen, f1: 0.8490190505981445
+class idx: 0, class: mutagen, f1: 0.8336933255195618
+class idx: 1, class: nonmutagen, f1: 0.8089330196380615
+
+
+Epoch: 086, Train Loss: 0.3431, Train F1: {'mutagen': 0.8762526512145996, 'nonmutagen': 0.8490190505981445}, Test F1: {'mutagen': 0.8336933255195618, 'nonmutagen': 0.8089330196380615} Test Accuracy: 0.8221709006928406
+#############################################
+Epoch: 087
+
+class idx: 0, class: mutagen, f1: 0.8829182982444763
+class idx: 1, class: nonmutagen, f1: 0.8340557217597961
+class idx: 0, class: mutagen, f1: 0.8008130192756653
+class idx: 1, class: nonmutagen, f1: 0.7379679083824158
+
+
+Epoch: 087, Train Loss: 0.3482, Train F1: {'mutagen': 0.8829182982444763, 'nonmutagen': 0.8340557217597961}, Test F1: {'mutagen': 0.8008130192756653, 'nonmutagen': 0.7379679083824158} Test Accuracy: 0.7736720554272517
+#############################################
+Epoch: 088
+
+class idx: 0, class: mutagen, f1: 0.8663984537124634
+class idx: 1, class: nonmutagen, f1: 0.795461893081665
+class idx: 0, class: mutagen, f1: 0.8046875
+class idx: 1, class: nonmutagen, f1: 0.7175140976905823
+
+
+Epoch: 088, Train Loss: 0.3445, Train F1: {'mutagen': 0.8663984537124634, 'nonmutagen': 0.795461893081665}, Test F1: {'mutagen': 0.8046875, 'nonmutagen': 0.7175140976905823} Test Accuracy: 0.76905311778291
+#############################################
+Epoch: 089
+
+class idx: 0, class: mutagen, f1: 0.8732845187187195
+class idx: 1, class: nonmutagen, f1: 0.8387659788131714
+class idx: 0, class: mutagen, f1: 0.8164147138595581
+class idx: 1, class: nonmutagen, f1: 0.789081871509552
+
+
+Epoch: 089, Train Loss: 0.3385, Train F1: {'mutagen': 0.8732845187187195, 'nonmutagen': 0.8387659788131714}, Test F1: {'mutagen': 0.8164147138595581, 'nonmutagen': 0.789081871509552} Test Accuracy: 0.8036951501154734
+#############################################
+Epoch: 090
+
+class idx: 0, class: mutagen, f1: 0.8799463510513306
+class idx: 1, class: nonmutagen, f1: 0.838980495929718
+class idx: 0, class: mutagen, f1: 0.8024948239326477
+class idx: 1, class: nonmutagen, f1: 0.7532467246055603
+
+
+Epoch: 090, Train Loss: 0.3465, Train F1: {'mutagen': 0.8799463510513306, 'nonmutagen': 0.838980495929718}, Test F1: {'mutagen': 0.8024948239326477, 'nonmutagen': 0.7532467246055603} Test Accuracy: 0.7806004618937644
+#############################################
+Epoch: 091
+
+class idx: 0, class: mutagen, f1: 0.8844781517982483
+class idx: 1, class: nonmutagen, f1: 0.8441636562347412
+class idx: 0, class: mutagen, f1: 0.8191268444061279
+class idx: 1, class: nonmutagen, f1: 0.7740259766578674
+
+
+Epoch: 091, Train Loss: 0.3451, Train F1: {'mutagen': 0.8844781517982483, 'nonmutagen': 0.8441636562347412}, Test F1: {'mutagen': 0.8191268444061279, 'nonmutagen': 0.7740259766578674} Test Accuracy: 0.7990762124711316
+#############################################
+Epoch: 092
+
+class idx: 0, class: mutagen, f1: 0.8897271156311035
+class idx: 1, class: nonmutagen, f1: 0.8494395613670349
+class idx: 0, class: mutagen, f1: 0.8049792647361755
+class idx: 1, class: nonmutagen, f1: 0.7552083134651184
+
+
+Epoch: 092, Train Loss: 0.3426, Train F1: {'mutagen': 0.8897271156311035, 'nonmutagen': 0.8494395613670349}, Test F1: {'mutagen': 0.8049792647361755, 'nonmutagen': 0.7552083134651184} Test Accuracy: 0.7829099307159353
+#############################################
+Epoch: 093
+
+class idx: 0, class: mutagen, f1: 0.8528428077697754
+class idx: 1, class: nonmutagen, f1: 0.8299282193183899
+class idx: 0, class: mutagen, f1: 0.7822222113609314
+class idx: 1, class: nonmutagen, f1: 0.7644230723381042
+
+
+Epoch: 093, Train Loss: 0.3396, Train F1: {'mutagen': 0.8528428077697754, 'nonmutagen': 0.8299282193183899}, Test F1: {'mutagen': 0.7822222113609314, 'nonmutagen': 0.7644230723381042} Test Accuracy: 0.7736720554272517
+#############################################
+Epoch: 094
+
+class idx: 0, class: mutagen, f1: 0.8802589178085327
+class idx: 1, class: nonmutagen, f1: 0.8512349128723145
+class idx: 0, class: mutagen, f1: 0.8245614171028137
+class idx: 1, class: nonmutagen, f1: 0.8048780560493469
+
+
+Epoch: 094, Train Loss: 0.3414, Train F1: {'mutagen': 0.8802589178085327, 'nonmutagen': 0.8512349128723145}, Test F1: {'mutagen': 0.8245614171028137, 'nonmutagen': 0.8048780560493469} Test Accuracy: 0.815242494226328
+#############################################
+Epoch: 095
+
+class idx: 0, class: mutagen, f1: 0.8784492611885071
+class idx: 1, class: nonmutagen, f1: 0.8442886471748352
+class idx: 0, class: mutagen, f1: 0.8237791657447815
+class idx: 1, class: nonmutagen, f1: 0.7898734211921692
+
+
+Epoch: 095, Train Loss: 0.3360, Train F1: {'mutagen': 0.8784492611885071, 'nonmutagen': 0.8442886471748352}, Test F1: {'mutagen': 0.8237791657447815, 'nonmutagen': 0.7898734211921692} Test Accuracy: 0.8083140877598153
+#############################################
+Epoch: 096
+
+class idx: 0, class: mutagen, f1: 0.8731719255447388
+class idx: 1, class: nonmutagen, f1: 0.8545504808425903
+class idx: 0, class: mutagen, f1: 0.8251121044158936
+class idx: 1, class: nonmutagen, f1: 0.8142856955528259
+
+
+Epoch: 096, Train Loss: 0.3413, Train F1: {'mutagen': 0.8731719255447388, 'nonmutagen': 0.8545504808425903}, Test F1: {'mutagen': 0.8251121044158936, 'nonmutagen': 0.8142856955528259} Test Accuracy: 0.8198614318706697
+#############################################
+Epoch: 097
+
+class idx: 0, class: mutagen, f1: 0.8745905756950378
+class idx: 1, class: nonmutagen, f1: 0.8483304977416992
+class idx: 0, class: mutagen, f1: 0.8263736367225647
+class idx: 1, class: nonmutagen, f1: 0.8077858686447144
+
+
+Epoch: 097, Train Loss: 0.3348, Train F1: {'mutagen': 0.8745905756950378, 'nonmutagen': 0.8483304977416992}, Test F1: {'mutagen': 0.8263736367225647, 'nonmutagen': 0.8077858686447144} Test Accuracy: 0.8175519630484989
+#############################################
+Epoch: 098
+
+class idx: 0, class: mutagen, f1: 0.8862906694412231
+class idx: 1, class: nonmutagen, f1: 0.8560649752616882
+class idx: 0, class: mutagen, f1: 0.8344085812568665
+class idx: 1, class: nonmutagen, f1: 0.8079800605773926
+
+
+Epoch: 098, Train Loss: 0.3315, Train F1: {'mutagen': 0.8862906694412231, 'nonmutagen': 0.8560649752616882}, Test F1: {'mutagen': 0.8344085812568665, 'nonmutagen': 0.8079800605773926} Test Accuracy: 0.8221709006928406
+#############################################
+Epoch: 099
+
+class idx: 0, class: mutagen, f1: 0.8842743635177612
+class idx: 1, class: nonmutagen, f1: 0.8591709136962891
+class idx: 0, class: mutagen, f1: 0.8177777528762817
+class idx: 1, class: nonmutagen, f1: 0.8028846383094788
+
+
+Epoch: 099, Train Loss: 0.3195, Train F1: {'mutagen': 0.8842743635177612, 'nonmutagen': 0.8591709136962891}, Test F1: {'mutagen': 0.8177777528762817, 'nonmutagen': 0.8028846383094788} Test Accuracy: 0.8106235565819861
+#############################################
+Epoch: 100
+
+class idx: 0, class: mutagen, f1: 0.8754963874816895
+class idx: 1, class: nonmutagen, f1: 0.8488800525665283
+class idx: 0, class: mutagen, f1: 0.827886700630188
+class idx: 1, class: nonmutagen, f1: 0.8058968186378479
+
+
+Epoch: 100, Train Loss: 0.3279, Train F1: {'mutagen': 0.8754963874816895, 'nonmutagen': 0.8488800525665283}, Test F1: {'mutagen': 0.827886700630188, 'nonmutagen': 0.8058968186378479} Test Accuracy: 0.8175519630484989
+#############################################
+Epoch: 101
+
+class idx: 0, class: mutagen, f1: 0.8873146176338196
+class idx: 1, class: nonmutagen, f1: 0.8453357815742493
+class idx: 0, class: mutagen, f1: 0.8149688243865967
+class idx: 1, class: nonmutagen, f1: 0.768831193447113
+
+
+Epoch: 101, Train Loss: 0.3303, Train F1: {'mutagen': 0.8873146176338196, 'nonmutagen': 0.8453357815742493}, Test F1: {'mutagen': 0.8149688243865967, 'nonmutagen': 0.768831193447113} Test Accuracy: 0.7944572748267898
+#############################################
+Epoch: 102
+
+class idx: 0, class: mutagen, f1: 0.86592698097229
+class idx: 1, class: nonmutagen, f1: 0.8334290385246277
+class idx: 0, class: mutagen, f1: 0.811279833316803
+class idx: 1, class: nonmutagen, f1: 0.7851851582527161
+
+
+Epoch: 102, Train Loss: 0.3399, Train F1: {'mutagen': 0.86592698097229, 'nonmutagen': 0.8334290385246277}, Test F1: {'mutagen': 0.811279833316803, 'nonmutagen': 0.7851851582527161} Test Accuracy: 0.7990762124711316
+#############################################
+Epoch: 103
+
+class idx: 0, class: mutagen, f1: 0.8850945830345154
+class idx: 1, class: nonmutagen, f1: 0.8566493988037109
+class idx: 0, class: mutagen, f1: 0.8017429113388062
+class idx: 1, class: nonmutagen, f1: 0.7764127850532532
+
+
+Epoch: 103, Train Loss: 0.3341, Train F1: {'mutagen': 0.8850945830345154, 'nonmutagen': 0.8566493988037109}, Test F1: {'mutagen': 0.8017429113388062, 'nonmutagen': 0.7764127850532532} Test Accuracy: 0.789838337182448
+#############################################
+Epoch: 104
+
+class idx: 0, class: mutagen, f1: 0.8745570778846741
+class idx: 1, class: nonmutagen, f1: 0.8514685034751892
+class idx: 0, class: mutagen, f1: 0.8230088353157043
+class idx: 1, class: nonmutagen, f1: 0.8067632913589478
+
+
+Epoch: 104, Train Loss: 0.3266, Train F1: {'mutagen': 0.8745570778846741, 'nonmutagen': 0.8514685034751892}, Test F1: {'mutagen': 0.8230088353157043, 'nonmutagen': 0.8067632913589478} Test Accuracy: 0.815242494226328
+#############################################
+Epoch: 105
+
+class idx: 0, class: mutagen, f1: 0.8858757019042969
+class idx: 1, class: nonmutagen, f1: 0.8507242202758789
+class idx: 0, class: mutagen, f1: 0.816067636013031
+class idx: 1, class: nonmutagen, f1: 0.7786259651184082
+
+
+Epoch: 105, Train Loss: 0.3331, Train F1: {'mutagen': 0.8858757019042969, 'nonmutagen': 0.8507242202758789}, Test F1: {'mutagen': 0.816067636013031, 'nonmutagen': 0.7786259651184082} Test Accuracy: 0.7990762124711316
+#############################################
+Epoch: 106
+
+class idx: 0, class: mutagen, f1: 0.8846675753593445
+class idx: 1, class: nonmutagen, f1: 0.8493797779083252
+class idx: 0, class: mutagen, f1: 0.8110403418540955
+class idx: 1, class: nonmutagen, f1: 0.7746835350990295
+
+
+Epoch: 106, Train Loss: 0.3257, Train F1: {'mutagen': 0.8846675753593445, 'nonmutagen': 0.8493797779083252}, Test F1: {'mutagen': 0.8110403418540955, 'nonmutagen': 0.7746835350990295} Test Accuracy: 0.7944572748267898
+#############################################
+Epoch: 107
+
+class idx: 0, class: mutagen, f1: 0.8806473612785339
+class idx: 1, class: nonmutagen, f1: 0.8419172167778015
+class idx: 0, class: mutagen, f1: 0.8212766051292419
+class idx: 1, class: nonmutagen, f1: 0.7878788113594055
+
+
+Epoch: 107, Train Loss: 0.3323, Train F1: {'mutagen': 0.8806473612785339, 'nonmutagen': 0.8419172167778015}, Test F1: {'mutagen': 0.8212766051292419, 'nonmutagen': 0.7878788113594055} Test Accuracy: 0.8060046189376443
+#############################################
+Epoch: 108
+
+class idx: 0, class: mutagen, f1: 0.889752984046936
+class idx: 1, class: nonmutagen, f1: 0.8597205877304077
+class idx: 0, class: mutagen, f1: 0.8187633156776428
+class idx: 1, class: nonmutagen, f1: 0.7858942151069641
+
+
+Epoch: 108, Train Loss: 0.3250, Train F1: {'mutagen': 0.889752984046936, 'nonmutagen': 0.8597205877304077}, Test F1: {'mutagen': 0.8187633156776428, 'nonmutagen': 0.7858942151069641} Test Accuracy: 0.8036951501154734
+#############################################
+Epoch: 109
+
+class idx: 0, class: mutagen, f1: 0.888637900352478
+class idx: 1, class: nonmutagen, f1: 0.854185163974762
+class idx: 0, class: mutagen, f1: 0.8094218373298645
+class idx: 1, class: nonmutagen, f1: 0.7769423723220825
+
+
+Epoch: 109, Train Loss: 0.3229, Train F1: {'mutagen': 0.888637900352478, 'nonmutagen': 0.854185163974762}, Test F1: {'mutagen': 0.8094218373298645, 'nonmutagen': 0.7769423723220825} Test Accuracy: 0.7944572748267898
+#############################################
+Epoch: 110
+
+class idx: 0, class: mutagen, f1: 0.8796400427818298
+class idx: 1, class: nonmutagen, f1: 0.840915858745575
+class idx: 0, class: mutagen, f1: 0.8143460154533386
+class idx: 1, class: nonmutagen, f1: 0.7755101919174194
+
+
+Epoch: 110, Train Loss: 0.3224, Train F1: {'mutagen': 0.8796400427818298, 'nonmutagen': 0.840915858745575}, Test F1: {'mutagen': 0.8143460154533386, 'nonmutagen': 0.7755101919174194} Test Accuracy: 0.7967667436489607
+#############################################
+Epoch: 111
+
+class idx: 0, class: mutagen, f1: 0.8622114062309265
+class idx: 1, class: nonmutagen, f1: 0.8464663028717041
+class idx: 0, class: mutagen, f1: 0.7954022884368896
+class idx: 1, class: nonmutagen, f1: 0.79350346326828
+
+
+Epoch: 111, Train Loss: 0.3251, Train F1: {'mutagen': 0.8622114062309265, 'nonmutagen': 0.8464663028717041}, Test F1: {'mutagen': 0.7954022884368896, 'nonmutagen': 0.79350346326828} Test Accuracy: 0.7944572748267898
+#############################################
+Epoch: 112
+
+class idx: 0, class: mutagen, f1: 0.8965674042701721
+class idx: 1, class: nonmutagen, f1: 0.8665297627449036
+class idx: 0, class: mutagen, f1: 0.8162392973899841
+class idx: 1, class: nonmutagen, f1: 0.7839195728302002
+
+
+Epoch: 112, Train Loss: 0.3298, Train F1: {'mutagen': 0.8965674042701721, 'nonmutagen': 0.8665297627449036}, Test F1: {'mutagen': 0.8162392973899841, 'nonmutagen': 0.7839195728302002} Test Accuracy: 0.8013856812933026
+#############################################
+Epoch: 113
+
+class idx: 0, class: mutagen, f1: 0.8918918967247009
+class idx: 1, class: nonmutagen, f1: 0.8574821949005127
+class idx: 0, class: mutagen, f1: 0.8085106611251831
+class idx: 1, class: nonmutagen, f1: 0.7727272510528564
+
+
+Epoch: 113, Train Loss: 0.3171, Train F1: {'mutagen': 0.8918918967247009, 'nonmutagen': 0.8574821949005127}, Test F1: {'mutagen': 0.8085106611251831, 'nonmutagen': 0.7727272510528564} Test Accuracy: 0.792147806004619
+#############################################
+Epoch: 114
+
+class idx: 0, class: mutagen, f1: 0.8849759697914124
+class idx: 1, class: nonmutagen, f1: 0.8535662293434143
+class idx: 0, class: mutagen, f1: 0.7939913868904114
+class idx: 1, class: nonmutagen, f1: 0.7599999904632568
+
+
+Epoch: 114, Train Loss: 0.3199, Train F1: {'mutagen': 0.8849759697914124, 'nonmutagen': 0.8535662293434143}, Test F1: {'mutagen': 0.7939913868904114, 'nonmutagen': 0.7599999904632568} Test Accuracy: 0.7782909930715936
+#############################################
+Epoch: 115
+
+class idx: 0, class: mutagen, f1: 0.8925022482872009
+class idx: 1, class: nonmutagen, f1: 0.8591715693473816
+class idx: 0, class: mutagen, f1: 0.8135592937469482
+class idx: 1, class: nonmutagen, f1: 0.7766497731208801
+
+
+Epoch: 115, Train Loss: 0.3165, Train F1: {'mutagen': 0.8925022482872009, 'nonmutagen': 0.8591715693473816}, Test F1: {'mutagen': 0.8135592937469482, 'nonmutagen': 0.7766497731208801} Test Accuracy: 0.7967667436489607
+#############################################
+Epoch: 116
+
+class idx: 0, class: mutagen, f1: 0.8967987298965454
+class idx: 1, class: nonmutagen, f1: 0.8620173335075378
+class idx: 0, class: mutagen, f1: 0.8284518718719482
+class idx: 1, class: nonmutagen, f1: 0.7886598110198975
+
+
+Epoch: 116, Train Loss: 0.3125, Train F1: {'mutagen': 0.8967987298965454, 'nonmutagen': 0.8620173335075378}, Test F1: {'mutagen': 0.8284518718719482, 'nonmutagen': 0.7886598110198975} Test Accuracy: 0.8106235565819861
+#############################################
+Epoch: 117
+
+class idx: 0, class: mutagen, f1: 0.8764407634735107
+class idx: 1, class: nonmutagen, f1: 0.8455331325531006
+class idx: 0, class: mutagen, f1: 0.807860255241394
+class idx: 1, class: nonmutagen, f1: 0.7843137383460999
+
+
+Epoch: 117, Train Loss: 0.3113, Train F1: {'mutagen': 0.8764407634735107, 'nonmutagen': 0.8455331325531006}, Test F1: {'mutagen': 0.807860255241394, 'nonmutagen': 0.7843137383460999} Test Accuracy: 0.7967667436489607
+#############################################
+Epoch: 118
+
+class idx: 0, class: mutagen, f1: 0.8903893828392029
+class idx: 1, class: nonmutagen, f1: 0.8552749156951904
+class idx: 0, class: mutagen, f1: 0.810234546661377
+class idx: 1, class: nonmutagen, f1: 0.7758186459541321
+
+
+Epoch: 118, Train Loss: 0.3139, Train F1: {'mutagen': 0.8903893828392029, 'nonmutagen': 0.8552749156951904}, Test F1: {'mutagen': 0.810234546661377, 'nonmutagen': 0.7758186459541321} Test Accuracy: 0.7944572748267898
+#############################################
+Epoch: 119
+
+class idx: 0, class: mutagen, f1: 0.8800374865531921
+class idx: 1, class: nonmutagen, f1: 0.8553672432899475
+class idx: 0, class: mutagen, f1: 0.8125
+class idx: 1, class: nonmutagen, f1: 0.7990430593490601
+
+
+Epoch: 119, Train Loss: 0.3051, Train F1: {'mutagen': 0.8800374865531921, 'nonmutagen': 0.8553672432899475}, Test F1: {'mutagen': 0.8125, 'nonmutagen': 0.7990430593490601} Test Accuracy: 0.8060046189376443
+#############################################
+Epoch: 120
+
+class idx: 0, class: mutagen, f1: 0.8820211887359619
+class idx: 1, class: nonmutagen, f1: 0.845037043094635
+class idx: 0, class: mutagen, f1: 0.8312236070632935
+class idx: 1, class: nonmutagen, f1: 0.795918345451355
+
+
+Epoch: 120, Train Loss: 0.3199, Train F1: {'mutagen': 0.8820211887359619, 'nonmutagen': 0.845037043094635}, Test F1: {'mutagen': 0.8312236070632935, 'nonmutagen': 0.795918345451355} Test Accuracy: 0.815242494226328
+#############################################
+Epoch: 121
+
+class idx: 0, class: mutagen, f1: 0.8962138295173645
+class idx: 1, class: nonmutagen, f1: 0.8595539331436157
+class idx: 0, class: mutagen, f1: 0.8132780194282532
+class idx: 1, class: nonmutagen, f1: 0.765625
+
+
+Epoch: 121, Train Loss: 0.3141, Train F1: {'mutagen': 0.8962138295173645, 'nonmutagen': 0.8595539331436157}, Test F1: {'mutagen': 0.8132780194282532, 'nonmutagen': 0.765625} Test Accuracy: 0.792147806004619
+#############################################
+Epoch: 122
+
+class idx: 0, class: mutagen, f1: 0.8957494497299194
+class idx: 1, class: nonmutagen, f1: 0.8603954315185547
+class idx: 0, class: mutagen, f1: 0.8218029141426086
+class idx: 1, class: nonmutagen, f1: 0.7814909815788269
+
+
+Epoch: 122, Train Loss: 0.3090, Train F1: {'mutagen': 0.8957494497299194, 'nonmutagen': 0.8603954315185547}, Test F1: {'mutagen': 0.8218029141426086, 'nonmutagen': 0.7814909815788269} Test Accuracy: 0.8036951501154734
+#############################################
+Epoch: 123
+
+class idx: 0, class: mutagen, f1: 0.8826025724411011
+class idx: 1, class: nonmutagen, f1: 0.8603477478027344
+class idx: 0, class: mutagen, f1: 0.8177777528762817
+class idx: 1, class: nonmutagen, f1: 0.8028846383094788
+
+
+Epoch: 123, Train Loss: 0.3148, Train F1: {'mutagen': 0.8826025724411011, 'nonmutagen': 0.8603477478027344}, Test F1: {'mutagen': 0.8177777528762817, 'nonmutagen': 0.8028846383094788} Test Accuracy: 0.8106235565819861
+#############################################
+Epoch: 124
+
+class idx: 0, class: mutagen, f1: 0.8842012882232666
+class idx: 1, class: nonmutagen, f1: 0.8381946682929993
+class idx: 0, class: mutagen, f1: 0.7950819730758667
+class idx: 1, class: nonmutagen, f1: 0.7354497313499451
+
+
+Epoch: 124, Train Loss: 0.3055, Train F1: {'mutagen': 0.8842012882232666, 'nonmutagen': 0.8381946682929993}, Test F1: {'mutagen': 0.7950819730758667, 'nonmutagen': 0.7354497313499451} Test Accuracy: 0.76905311778291
+#############################################
+Epoch: 125
+
+class idx: 0, class: mutagen, f1: 0.8792270421981812
+class idx: 1, class: nonmutagen, f1: 0.8483097553253174
+class idx: 0, class: mutagen, f1: 0.8111587762832642
+class idx: 1, class: nonmutagen, f1: 0.7799999713897705
+
+
+Epoch: 125, Train Loss: 0.3201, Train F1: {'mutagen': 0.8792270421981812, 'nonmutagen': 0.8483097553253174}, Test F1: {'mutagen': 0.8111587762832642, 'nonmutagen': 0.7799999713897705} Test Accuracy: 0.7967667436489607
+#############################################
+Epoch: 126
+
+class idx: 0, class: mutagen, f1: 0.8879131078720093
+class idx: 1, class: nonmutagen, f1: 0.8606722354888916
+class idx: 0, class: mutagen, f1: 0.8227571249008179
+class idx: 1, class: nonmutagen, f1: 0.8019559979438782
+
+
+Epoch: 126, Train Loss: 0.3100, Train F1: {'mutagen': 0.8879131078720093, 'nonmutagen': 0.8606722354888916}, Test F1: {'mutagen': 0.8227571249008179, 'nonmutagen': 0.8019559979438782} Test Accuracy: 0.812933025404157
+#############################################
+Epoch: 127
+
+class idx: 0, class: mutagen, f1: 0.8864434361457825
+class idx: 1, class: nonmutagen, f1: 0.862878143787384
+class idx: 0, class: mutagen, f1: 0.8134831190109253
+class idx: 1, class: nonmutagen, f1: 0.8028503656387329
+
+
+Epoch: 127, Train Loss: 0.3206, Train F1: {'mutagen': 0.8864434361457825, 'nonmutagen': 0.862878143787384}, Test F1: {'mutagen': 0.8134831190109253, 'nonmutagen': 0.8028503656387329} Test Accuracy: 0.8083140877598153
+Final Test Accuracy: 0.8083140877598153

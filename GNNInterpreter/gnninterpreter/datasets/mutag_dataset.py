@@ -58,6 +58,14 @@ class MUTAGDataset(BaseGraphDataset):
         2: 4,
         3: 6,
     }
+    
+    # creating a color map for the edges
+    EDGE_COLOR = {
+        0: 'black',
+        1: 'green',
+        2: 'red',
+        3: 'blue'
+    }
 
     def __init__(self, *,
                  name='MUTAG',
@@ -120,20 +128,19 @@ class MUTAGDataset(BaseGraphDataset):
         graph_viz = nx.Graph()
         
         for v in G.nodes():
-            graph_viz.add_node(v, {'label': self.NODE_CLS[G.nodes[v]['label']], 'color': self.NODE_COLOR[G.nodes[v]['label']]})
-            
+            # graph_viz.add_node( (v, {'label': self.NODE_CLS[G.nodes[v]['label']], 'color': self.NODE_COLOR[G.nodes[v]['label']]} ) )4
+            graph_viz.add_node( v, label= self.NODE_CLS[G.nodes[v]['label']], color= self.NODE_COLOR[G.nodes[v]['label']] )
+        print("Graph Viz info: ")
+        print("No of nodes: ", graph_viz.number_of_nodes())
+        print("Nodes: ", graph_viz.nodes(data=True))
+                    
         for u, v in G.edges():
-            graph_viz.add_edge(u, v, {'label': self.EDGE_CLS[G[u][v]['label']], 'color': self.EDGE_COLOR[G[u][v]['label']], 'width': self.EDGE_WIDTH[G[u][v]['label']]})
+            graph_viz.add_edge( u, v, label= self.EDGE_CLS[G[u][v]['label']], color= self.EDGE_COLOR[G[u][v]['label']], width= self.EDGE_WIDTH[G[u][v]['label']])
         
         graph_viz.remove_nodes_from(list(nx.isolates(graph_viz)))
         
-        print("Graph Viz info: ")
-        print("No of nodes: ", graph_viz.number_of_nodes())
         print("No of edges: ", graph_viz.number_of_edges())
-        print("Nodes: ", graph_viz.nodes(data=True))
         print("Edges: ", graph_viz.edges(data=True))
-        print("Nodes data: ", graph_viz.nodes.data())
-        print("Edges data: ", graph_viz.edges.data())
         
         
         plt.figure(1, figsize=(15, 10), dpi=60)

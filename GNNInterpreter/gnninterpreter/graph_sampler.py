@@ -51,7 +51,6 @@ class GraphSampler(nn.Module):
         self.edge_cls = self._gen_random_cls(self.m, self.l) if num_edge_cls else None
         self.tau = temperature
 
-
         self.param_list = []
 
         self.omega = nn.Parameter(torch.empty(self.m))

@@ -59,10 +59,14 @@ class BaseGraphDataset(pyg.data.InMemoryDataset, ABC):
                        for i in G.nodes]
         if G.number_of_edges() > 0:
             if hasattr(self, "EDGE_CLS"):
+                # print(G.edges(data=True))
+                # print([G.edges[e]['label'] for e in G.edges])
                 edge_labels = [G.edges[e]['label']
                                if 'label' in G.edges[e] or not generate_label
                                else random.choice(list(self.EDGE_CLS))
                                for e in G.edges]
+                # print("edge-labels: ", edge_labels)
+                # print(self.EDGE_CLS)
                 edge_index, edge_attr = pyg.utils.to_undirected(
                     torch.tensor(list(G.edges)).T,
                     torch.eye(len(self.EDGE_CLS))[edge_labels].float(),

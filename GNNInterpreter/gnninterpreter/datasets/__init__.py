@@ -5,3 +5,4 @@ from .motif_dataset import MotifDataset
 from .mutag_dataset import MUTAGDataset
 from .rome_dataset import RomeDataset
 from .shape_dataset import ShapeDataset
+from .mutagenicity_dataset import MutagenicityDataset
