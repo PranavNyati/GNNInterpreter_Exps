@@ -2,3 +2,4 @@ from .class_score_criterion import ClassScoreCriterion
 from .embedding_criterion import EmbeddingCriterion
 from .perplexity_criterion import PerplexityCriterion
 from .weighted_criterion import WeightedCriterion
+from .ged_closeness_criterion import GED_Closeness_Criterion

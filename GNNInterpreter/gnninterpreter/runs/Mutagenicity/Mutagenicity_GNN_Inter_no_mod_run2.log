@@ -1,0 +1,676 @@
+1.) MUTAGENIC (CLASS 0) :
+
+  0%|          | 0/2000 [00:00<?, ?it/s]
+Iteration: 0 => Loss Breakdown:
+logits weighted loss: 41.23785400390625
+logits weight: 10
+embeds weighted loss: 5.901673316955566
+embeds weight: 10
+logits weighted loss: 0.0
+logits weight: 0
+omega weighted loss: 23.359481811523438
+omega weight: 0.04
+omega weighted loss: 14.658404350280762
+omega weight: 0.4
+theta_pairs weighted loss: 513.6334228515625
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 186.1056365966797
+Budget Penalty weight: 0.95
+Iteration: 0, Total Loss: 784.896484375
+  0%|          | 1/2000 [00:00<15:18,  2.18it/s, size=212, bpw=0.95, mutagen=-11.8, nonmutagen=13.3]iteration=0, loss=784.90, size=212.04336547851562, scores={'mutagen': -11.841021537780762, 'nonmutagen': 13.31308650970459}
+
+Iteration: 1 => Loss Breakdown:
+logits weighted loss: -21.107511520385742
+logits weight: 10
+embeds weighted loss: 5.135028839111328
+embeds weight: 10
+logits weighted loss: 0.0
+logits weight: 0
+omega weighted loss: 11.782454490661621
+omega weight: 0.04
+omega weighted loss: 8.570891380310059
+omega weight: 0.4
+theta_pairs weighted loss: 137.80584716796875
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 168.80662536621094
+Budget Penalty weight: 0.9025
+Iteration: 1, Total Loss: 310.99334716796875
+  0%|          | 1/2000 [00:00<15:18,  2.18it/s, size=195, bpw=0.902, mutagen=-7.53, nonmutagen=9.5]iteration=1, loss=310.99, size=194.97567749023438, scores={'mutagen': -7.527862548828125, 'nonmutagen': 9.499329566955566}
+
+Iteration: 2 => Loss Breakdown:
+logits weighted loss: -31.34524917602539
+logits weight: 10
+embeds weighted loss: 4.579057216644287
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 9.862543106079102
+omega weight: 0.04
+omega weighted loss: 6.7404022216796875
+omega weight: 0.4
+theta_pairs weighted loss: 60.98023986816406
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 145.73289489746094
+Budget Penalty weight: 0.8573749999999999
+Iteration: 2, Total Loss: 196.54989624023438
+  0%|          | 1/2000 [00:00<15:18,  2.18it/s, size=179, bpw=0.857, mutagen=-5.8, nonmutagen=7.6] iteration=2, loss=196.55, size=178.53167724609375, scores={'mutagen': -5.7962751388549805, 'nonmutagen': 7.602757453918457}
+
+Iteration: 3 => Loss Breakdown:
+logits weighted loss: -45.94258117675781
+logits weight: 10
+embeds weighted loss: 4.465041637420654
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 10.194395065307617
+omega weight: 0.04
+omega weighted loss: 6.400134563446045
+omega weight: 0.4
+theta_pairs weighted loss: 29.20992660522461
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 125.05250549316406
+Budget Penalty weight: 0.8145062499999999
+Iteration: 3, Total Loss: 129.37942504882812
+  0%|          | 4/2000 [00:00<03:52,  8.58it/s, size=163, bpw=0.815, mutagen=0.527, nonmutagen=-1.03]iteration=3, loss=129.38, size=163.09979248046875, scores={'mutagen': 0.5272143483161926, 'nonmutagen': -1.034127116203308}
+
+Iteration: 4 => Loss Breakdown:
+logits weighted loss: -55.886837005615234
+logits weight: 10
+embeds weighted loss: 4.482888698577881
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 12.145378112792969
+omega weight: 0.04
+omega weighted loss: 7.362233638763428
+omega weight: 0.4
+theta_pairs weighted loss: 33.741600036621094
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 106.8589859008789
+Budget Penalty weight: 0.7737809374999999
+Iteration: 4, Total Loss: 108.7042465209961
+  0%|          | 4/2000 [00:00<03:52,  8.58it/s, size=149, bpw=0.774, mutagen=-.242, nonmutagen=-.00946]iteration=4, loss=108.70, size=149.01699829101562, scores={'mutagen': -0.2422361522912979, 'nonmutagen': -0.009455189108848572}
+
+Prediction of the sample:  <generator object Trainer.train.<locals>.<genexpr> at 0x7f00c72df580>
+
+Iteration: 5 => Loss Breakdown:
+logits weighted loss: -54.374412536621094
+logits weight: 10
+embeds weighted loss: 4.526814937591553
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 13.24770736694336
+omega weight: 0.04
+omega weighted loss: 7.5718512535095215
+omega weight: 0.4
+theta_pairs weighted loss: 17.456390380859375
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 105.55818939208984
+Budget Penalty weight: 0.8511590312499999
+Iteration: 5, Total Loss: 93.98654174804688
+  0%|          | 4/2000 [00:00<03:52,  8.58it/s, size=137, bpw=0.851, mutagen=1.77, nonmutagen=-2.23]   iteration=5, loss=93.99, size=137.06846618652344, scores={'mutagen': 1.767913818359375, 'nonmutagen': -2.231891632080078}
+
+Prediction of the sample:  <generator object Trainer.train.<locals>.<genexpr> at 0x7f00c7589f20>
+
+Iteration: 6 => Loss Breakdown:
+logits weighted loss: -58.76488494873047
+logits weight: 10
+embeds weighted loss: 4.504985809326172
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 15.322526931762695
+omega weight: 0.04
+omega weighted loss: 8.436213493347168
+omega weight: 0.4
+theta_pairs weighted loss: 21.716005325317383
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 104.92689514160156
+Budget Penalty weight: 0.936274934375
+Iteration: 6, Total Loss: 96.1417465209961
+  0%|          | 7/2000 [00:00<02:28, 13.39it/s, size=124, bpw=0.936, mutagen=3.15, nonmutagen=-4.1] iteration=6, loss=96.14, size=123.52543640136719, scores={'mutagen': 3.1491987705230713, 'nonmutagen': -4.099200248718262}
+
+Prediction of the sample:  <generator object Trainer.train.<locals>.<genexpr> at 0x7f00c7589f90>
+
+Iteration: 7 => Loss Breakdown:
+logits weighted loss: -60.33514404296875
+logits weight: 10
+embeds weighted loss: 4.569421291351318
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 17.600618362426758
+omega weight: 0.04
+omega weighted loss: 9.179511070251465
+omega weight: 0.4
+theta_pairs weighted loss: 10.59492301940918
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 101.47158813476562
+Budget Penalty weight: 1.0299024278125
+Iteration: 7, Total Loss: 83.08091735839844
+  0%|          | 7/2000 [00:00<02:28, 13.39it/s, size=113, bpw=1.03, mutagen=1.74, nonmutagen=-1.69]iteration=7, loss=83.08, size=112.50563049316406, scores={'mutagen': 1.7395119667053223, 'nonmutagen': -1.6862988471984863}
+
+Prediction of the sample:  <generator object Trainer.train.<locals>.<genexpr> at 0x7f00c72df040>
+
+Iteration: 8 => Loss Breakdown:
+logits weighted loss: -65.93390655517578
+logits weight: 10
+embeds weighted loss: 4.524331569671631
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 19.760040283203125
+omega weight: 0.04
+omega weighted loss: 10.213979721069336
+omega weight: 0.4
+theta_pairs weighted loss: 14.19898796081543
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 99.13449096679688
+Budget Penalty weight: 1.13289267059375
+Iteration: 8, Total Loss: 81.89791870117188
+  0%|          | 7/2000 [00:00<02:28, 13.39it/s, size=101, bpw=1.13, mutagen=3.53, nonmutagen=-4.72]iteration=8, loss=81.90, size=101.47203063964844, scores={'mutagen': 3.5318422317504883, 'nonmutagen': -4.723568439483643}
+
+Prediction of the sample:  <generator object Trainer.train.<locals>.<genexpr> at 0x7f00c72df0b0>
+
+Iteration: 9 => Loss Breakdown:
+logits weighted loss: -64.96998596191406
+logits weight: 10
+embeds weighted loss: 4.584130764007568
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 22.21200942993164
+omega weight: 0.04
+omega weighted loss: 11.303287506103516
+omega weight: 0.4
+theta_pairs weighted loss: 12.953203201293945
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 95.29806518554688
+Budget Penalty weight: 1.2461819376531251
+Iteration: 9, Total Loss: 81.38070678710938
+  0%|          | 10/2000 [00:00<01:56, 17.04it/s, size=91.6, bpw=1.25, mutagen=1.57, nonmutagen=-1.34]iteration=9, loss=81.38, size=91.63090515136719, scores={'mutagen': 1.5739083290100098, 'nonmutagen': -1.3449139595031738}
+
+Iteration: 10 => Loss Breakdown:
+logits weighted loss: -63.73694610595703
+logits weight: 10
+embeds weighted loss: 4.5891947746276855
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 24.337499618530273
+omega weight: 0.04
+omega weighted loss: 12.280743598937988
+omega weight: 0.4
+theta_pairs weighted loss: 10.384634017944336
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 78.88251495361328
+Budget Penalty weight: 1.1838728407704688
+Iteration: 10, Total Loss: 66.73764038085938
+  0%|          | 10/2000 [00:00<01:56, 17.04it/s, size=85.1, bpw=1.18, mutagen=0.942, nonmutagen=-.87]iteration=10, loss=66.74, size=85.11973571777344, scores={'mutagen': 0.9421606659889221, 'nonmutagen': -0.8696650266647339}
+
+Prediction of the sample:  <generator object Trainer.train.<locals>.<genexpr> at 0x7f00c7589eb0>
+
+Iteration: 11 => Loss Breakdown:
+logits weighted loss: -68.34586334228516
+logits weight: 10
+embeds weighted loss: 4.608232498168945
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 26.14182472229004
+omega weight: 0.04
+omega weighted loss: 13.055142402648926
+omega weight: 0.4
+theta_pairs weighted loss: 9.036437034606934
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 78.29153442382812
+Budget Penalty weight: 1.3022601248475159
+Iteration: 11, Total Loss: 62.78730392456055
+  0%|          | 10/2000 [00:00<01:56, 17.04it/s, size=80.1, bpw=1.3, mutagen=1.39, nonmutagen=-1.44] iteration=11, loss=62.79, size=80.10779571533203, scores={'mutagen': 1.3853508234024048, 'nonmutagen': -1.440510630607605}
+
+Prediction of the sample:  <generator object Trainer.train.<locals>.<genexpr> at 0x7f00c71279e0>
+
+Iteration: 12 => Loss Breakdown:
+logits weighted loss: -88.70130920410156
+logits weight: 10
+embeds weighted loss: 4.8157877922058105
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 27.965394973754883
+omega weight: 0.04
+omega weighted loss: 14.028233528137207
+omega weight: 0.4
+theta_pairs weighted loss: 28.730548858642578
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 78.94115447998047
+Budget Penalty weight: 1.4324861373322675
+Iteration: 12, Total Loss: 65.7798080444336
+  1%|          | 13/2000 [00:00<01:43, 19.22it/s, size=75.5, bpw=1.43, mutagen=1.65, nonmutagen=-1.67]iteration=12, loss=65.78, size=75.51473236083984, scores={'mutagen': 1.6482118368148804, 'nonmutagen': -1.6684824228286743}
+
+Prediction of the sample:  <generator object Trainer.train.<locals>.<genexpr> at 0x7f00c7127900>
+
+Iteration: 13 => Loss Breakdown:
+logits weighted loss: -101.05492401123047
+logits weight: 10
+embeds weighted loss: 5.158448696136475
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 29.879440307617188
+omega weight: 0.04
+omega weighted loss: 15.086282730102539
+omega weight: 0.4
+theta_pairs weighted loss: 32.680240631103516
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 79.59781646728516
+Budget Penalty weight: 1.5757347510654944
+Iteration: 13, Total Loss: 61.3473014831543
+  1%|          | 13/2000 [00:00<01:43, 19.22it/s, size=65.8, bpw=1.58, mutagen=2.46, nonmutagen=-1.71]iteration=13, loss=61.35, size=65.8460693359375, scores={'mutagen': 2.4624886512756348, 'nonmutagen': -1.7139116525650024}
+
+Iteration: 14 => Loss Breakdown:
+logits weighted loss: -96.83743286132812
+logits weight: 10
+embeds weighted loss: 5.06256628036499
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 33.05484390258789
+omega weight: 0.04
+omega weighted loss: 16.72492027282715
+omega weight: 0.4
+theta_pairs weighted loss: 23.443899154663086
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 61.14444351196289
+Budget Penalty weight: 1.4969480135122197
+Iteration: 14, Total Loss: 42.593238830566406
+  1%|          | 13/2000 [00:01<01:43, 19.22it/s, size=61.5, bpw=1.5, mutagen=-.431, nonmutagen=0.344]iteration=14, loss=42.59, size=61.46677780151367, scores={'mutagen': -0.4306963384151459, 'nonmutagen': 0.343692421913147}
+
+Prediction of the sample:  <generator object Trainer.train.<locals>.<genexpr> at 0x7f00c72df040>
+
+Iteration: 15 => Loss Breakdown:
+logits weighted loss: -97.6707534790039
+logits weight: 10
+embeds weighted loss: 5.000438213348389
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 34.84092712402344
+omega weight: 0.04
+omega weighted loss: 17.481630325317383
+omega weight: 0.4
+theta_pairs weighted loss: 23.147655487060547
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 60.04775619506836
+Budget Penalty weight: 1.6466428148634418
+Iteration: 15, Total Loss: 42.84764862060547
+  1%|          | 16/2000 [00:01<01:36, 20.64it/s, size=57.2, bpw=1.65, mutagen=1.31, nonmutagen=-2.1] iteration=15, loss=42.85, size=57.19329071044922, scores={'mutagen': 1.3145986795425415, 'nonmutagen': -2.0963385105133057}
+
+Prediction of the sample:  <generator object Trainer.train.<locals>.<genexpr> at 0x7f00c7589eb0>
+
+Iteration: 16 => Loss Breakdown:
+logits weighted loss: -100.54623413085938
+logits weight: 10
+embeds weighted loss: 4.933166980743408
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 36.83415603637695
+omega weight: 0.04
+omega weighted loss: 18.404193878173828
+omega weight: 0.4
+theta_pairs weighted loss: 50.3575325012207
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 58.31193542480469
+Budget Penalty weight: 1.8113070963497861
+Iteration: 16, Total Loss: 68.29475402832031
+  1%|          | 16/2000 [00:01<01:36, 20.64it/s, size=53.5, bpw=1.81, mutagen=1.27, nonmutagen=-1.41]iteration=16, loss=68.29, size=53.510498046875, scores={'mutagen': 1.2703242301940918, 'nonmutagen': -1.4144197702407837}
+
+Prediction of the sample:  <generator object Trainer.train.<locals>.<genexpr> at 0x7f00c72df510>
+
+Iteration: 17 => Loss Breakdown:
+logits weighted loss: -98.69454193115234
+logits weight: 10
+embeds weighted loss: 4.934861660003662
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 38.493892669677734
+omega weight: 0.04
+omega weighted loss: 19.16010856628418
+omega weight: 0.4
+theta_pairs weighted loss: 43.56685256958008
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 56.805397033691406
+Budget Penalty weight: 1.992437805984765
+Iteration: 17, Total Loss: 64.26657104492188
+  1%|          | 16/2000 [00:01<01:36, 20.64it/s, size=50.1, bpw=1.99, mutagen=4.51, nonmutagen=-5.91]iteration=17, loss=64.27, size=50.086814880371094, scores={'mutagen': 4.508680820465088, 'nonmutagen': -5.911147594451904}
+
+Iteration: 18 => Loss Breakdown:
+logits weighted loss: -118.38844299316406
+logits weight: 10
+embeds weighted loss: 5.638213157653809
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 40.15971755981445
+omega weight: 0.04
+omega weighted loss: 20.085996627807617
+omega weight: 0.4
+theta_pairs weighted loss: 48.76630401611328
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 47.48472213745117
+Budget Penalty weight: 1.8928159156855267
+Iteration: 18, Total Loss: 43.74650955200195
+  1%|          | 19/2000 [00:01<01:29, 22.24it/s, size=42.9, bpw=1.89, mutagen=-6.17, nonmutagen=3.34]iteration=18, loss=43.75, size=42.91793441772461, scores={'mutagen': -6.172090530395508, 'nonmutagen': 3.343701124191284}
+
+Iteration: 19 => Loss Breakdown:
+logits weighted loss: -128.3848114013672
+logits weight: 10
+embeds weighted loss: 5.440651893615723
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 42.05828094482422
+omega weight: 0.04
+omega weighted loss: 21.051013946533203
+omega weight: 0.4
+theta_pairs weighted loss: 22.44146156311035
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 32.219581604003906
+Budget Penalty weight: 1.7981751199012503
+Iteration: 19, Total Loss: -5.173820495605469
+  1%|          | 19/2000 [00:01<01:29, 22.24it/s, size=41.7, bpw=1.8, mutagen=-2.94, nonmutagen=0.648]iteration=19, loss=-5.17, size=41.67069625854492, scores={'mutagen': -2.9372165203094482, 'nonmutagen': 0.64802086353302}
+
+Iteration: 20 => Loss Breakdown:
+logits weighted loss: -127.67384338378906
+logits weight: 10
+embeds weighted loss: 5.207238674163818
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 44.68413162231445
+omega weight: 0.04
+omega weighted loss: 22.677480697631836
+omega weight: 0.4
+theta_pairs weighted loss: 59.51166534423828
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 28.477989196777344
+Budget Penalty weight: 1.7082663639061877
+Iteration: 20, Total Loss: 32.884666442871094
+  1%|          | 19/2000 [00:01<01:29, 22.24it/s, size=38.1, bpw=1.71, mutagen=0.0133, nonmutagen=-1.78]iteration=20, loss=32.88, size=38.085201263427734, scores={'mutagen': 0.013281591236591339, 'nonmutagen': -1.7809638977050781}
+
+Iteration: 21 => Loss Breakdown:
+logits weighted loss: -123.31181335449219
+logits weight: 10
+embeds weighted loss: 5.198912143707275
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 45.67082977294922
+omega weight: 0.04
+omega weighted loss: 22.965665817260742
+omega weight: 0.4
+theta_pairs weighted loss: 40.443092346191406
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 21.235361099243164
+Budget Penalty weight: 1.6228530457108783
+Iteration: 21, Total Loss: 12.202051162719727
+  1%|          | 22/2000 [00:01<01:24, 23.38it/s, size=35.7, bpw=1.62, mutagen=0.398, nonmutagen=-1.21] iteration=21, loss=12.20, size=35.705528259277344, scores={'mutagen': 0.39760664105415344, 'nonmutagen': -1.2051283121109009}
+
+Prediction of the sample:  <generator object Trainer.train.<locals>.<genexpr> at 0x7f00c7589f20>
+
+Iteration: 22 => Loss Breakdown:
+logits weighted loss: -134.83908081054688
+logits weight: 10
+embeds weighted loss: 5.305881023406982
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 46.24117660522461
+omega weight: 0.04
+omega weighted loss: 23.124141693115234
+omega weight: 0.4
+theta_pairs weighted loss: 27.51911735534668
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 19.110889434814453
+Budget Penalty weight: 1.7851383502819662
+Iteration: 22, Total Loss: -13.53787612915039
+  1%|          | 22/2000 [00:01<01:24, 23.38it/s, size=34.4, bpw=1.79, mutagen=2.15, nonmutagen=-2.86] iteration=22, loss=-13.54, size=34.36629867553711, scores={'mutagen': 2.1469783782958984, 'nonmutagen': -2.8641374111175537}
+
+Prediction of the sample:  <generator object Trainer.train.<locals>.<genexpr> at 0x7f00c71279e0>
+
+Iteration: 23 => Loss Breakdown:
+logits weighted loss: -142.04937744140625
+logits weight: 10
+embeds weighted loss: 5.404382228851318
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 47.39604949951172
+omega weight: 0.04
+omega weighted loss: 23.637727737426758
+omega weight: 0.4
+theta_pairs weighted loss: 35.628448486328125
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 18.39232063293457
+Budget Penalty weight: 1.963652185310163
+Iteration: 23, Total Loss: -11.590444564819336
+  1%|          | 22/2000 [00:01<01:24, 23.38it/s, size=32.5, bpw=1.96, mutagen=1.5, nonmutagen=-2.35] iteration=23, loss=-11.59, size=32.51687240600586, scores={'mutagen': 1.5025577545166016, 'nonmutagen': -2.349151849746704}
+
+Prediction of the sample:  <generator object Trainer.train.<locals>.<genexpr> at 0x7f00c7127900>
+
+Iteration: 24 => Loss Breakdown:
+logits weighted loss: -143.0626983642578
+logits weight: 10
+embeds weighted loss: 5.410621166229248
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 48.11559295654297
+omega weight: 0.04
+omega weighted loss: 23.944904327392578
+omega weight: 0.4
+theta_pairs weighted loss: 27.73854637145996
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 16.237749099731445
+Budget Penalty weight: 2.1600174038411795
+Iteration: 24, Total Loss: -21.615285873413086
+  1%|          | 22/2000 [00:01<01:24, 23.38it/s, size=30.5, bpw=2.16, mutagen=2.11, nonmutagen=-3.22]iteration=24, loss=-21.62, size=30.48288917541504, scores={'mutagen': 2.112539529800415, 'nonmutagen': -3.224276542663574}
+
+Iteration: 25 => Loss Breakdown:
+logits weighted loss: -140.91184997558594
+logits weight: 10
+embeds weighted loss: 5.3258137702941895
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 49.04475021362305
+omega weight: 0.04
+omega weighted loss: 24.293563842773438
+omega weight: 0.4
+theta_pairs weighted loss: 28.052095413208008
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 11.259491920471191
+Budget Penalty weight: 2.0520165336491205
+Iteration: 25, Total Loss: -22.936126708984375
+  1%|▏         | 26/2000 [00:01<01:16, 25.86it/s, size=30.2, bpw=2.05, mutagen=-4.55, nonmutagen=3.06]iteration=25, loss=-22.94, size=30.18291473388672, scores={'mutagen': -4.547735214233398, 'nonmutagen': 3.059648275375366}
+
+Prediction of the sample:  <generator object Trainer.train.<locals>.<genexpr> at 0x7f00c72df820>
+
+Iteration: 26 => Loss Breakdown:
+logits weighted loss: -151.14683532714844
+logits weight: 10
+embeds weighted loss: 5.357780933380127
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 50.88420486450195
+omega weight: 0.04
+omega weighted loss: 26.05990982055664
+omega weight: 0.4
+theta_pairs weighted loss: 33.148983001708984
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 11.711601257324219
+Budget Penalty weight: 2.2572181870140327
+Iteration: 26, Total Loss: -23.984355926513672
+  1%|▏         | 26/2000 [00:01<01:16, 25.86it/s, size=29.8, bpw=2.26, mutagen=1.49, nonmutagen=-2.69]iteration=26, loss=-23.98, size=29.798564910888672, scores={'mutagen': 1.4931902885437012, 'nonmutagen': -2.690119743347168}
+
+Prediction of the sample:  <generator object Trainer.train.<locals>.<genexpr> at 0x7f00c72df270>
+
+Iteration: 27 => Loss Breakdown:
+logits weighted loss: -150.3631134033203
+logits weight: 10
+embeds weighted loss: 5.349605083465576
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 51.68634796142578
+omega weight: 0.04
+omega weighted loss: 26.342395782470703
+omega weight: 0.4
+theta_pairs weighted loss: 45.42015075683594
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 11.934927940368652
+Budget Penalty weight: 2.4829400057154363
+Iteration: 27, Total Loss: -9.629677772521973
+  1%|▏         | 26/2000 [00:01<01:16, 25.86it/s, size=27.7, bpw=2.48, mutagen=1.65, nonmutagen=-3.85]iteration=27, loss=-9.63, size=27.669401168823242, scores={'mutagen': 1.6547293663024902, 'nonmutagen': -3.853663682937622}
+
+Prediction of the sample:  <generator object Trainer.train.<locals>.<genexpr> at 0x7f00c7589eb0>
+
+Iteration: 28 => Loss Breakdown:
+logits weighted loss: -145.4873809814453
+logits weight: 10
+embeds weighted loss: 5.335983753204346
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 52.36858367919922
+omega weight: 0.04
+omega weighted loss: 26.598651885986328
+omega weight: 0.4
+theta_pairs weighted loss: 29.40483283996582
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 7.473747730255127
+Budget Penalty weight: 2.73123400628698
+Iteration: 28, Total Loss: -24.30558204650879
+  1%|▏         | 26/2000 [00:01<01:16, 25.86it/s, size=26.2, bpw=2.73, mutagen=1.76, nonmutagen=-3.54]iteration=28, loss=-24.31, size=26.226037979125977, scores={'mutagen': 1.7627606391906738, 'nonmutagen': -3.5446231365203857}
+
+Iteration: 29 => Loss Breakdown:
+logits weighted loss: -149.31179809570312
+logits weight: 10
+embeds weighted loss: 5.380712032318115
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 53.637454986572266
+omega weight: 0.04
+omega weighted loss: 27.354299545288086
+omega weight: 0.4
+theta_pairs weighted loss: 35.398075103759766
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 3.848815441131592
+Budget Penalty weight: 2.594672305972631
+Iteration: 29, Total Loss: -23.692447662353516
+  2%|▏         | 30/2000 [00:01<01:11, 27.51it/s, size=27.9, bpw=2.59, mutagen=-4.41, nonmutagen=2.36]iteration=29, loss=-23.69, size=27.86551284790039, scores={'mutagen': -4.409448623657227, 'nonmutagen': 2.363786458969116}
+
+Prediction of the sample:  <generator object Trainer.train.<locals>.<genexpr> at 0x7f00c7589f90>
+
+Iteration: 30 => Loss Breakdown:
+logits weighted loss: -152.20538330078125
+logits weight: 10
+embeds weighted loss: 5.303511142730713
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 54.30119323730469
+omega weight: 0.04
+omega weighted loss: 27.72556495666504
+omega weight: 0.4
+theta_pairs weighted loss: 68.3364028930664
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 8.33666706085205
+Budget Penalty weight: 2.8541395365698943
+Iteration: 30, Total Loss: 11.797955513000488
+  2%|▏         | 30/2000 [00:01<01:11, 27.51it/s, size=26.7, bpw=2.85, mutagen=1.95, nonmutagen=-3.91]iteration=30, loss=11.80, size=26.73203468322754, scores={'mutagen': 1.9450812339782715, 'nonmutagen': -3.909976005554199}
+
+Iteration: 31 => Loss Breakdown:
+logits weighted loss: -153.58872985839844
+logits weight: 10
+embeds weighted loss: 5.332226753234863
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 54.87108612060547
+omega weight: 0.04
+omega weighted loss: 27.882429122924805
+omega weight: 0.4
+theta_pairs weighted loss: 61.427391052246094
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 5.137999057769775
+Budget Penalty weight: 2.7114325597413993
+Iteration: 31, Total Loss: 1.0624070167541504
+  2%|▏         | 30/2000 [00:01<01:11, 27.51it/s, size=27.1, bpw=2.71, mutagen=-4.39, nonmutagen=3.66]iteration=31, loss=1.06, size=27.105783462524414, scores={'mutagen': -4.385676383972168, 'nonmutagen': 3.6598916053771973}
+
+Prediction of the sample:  <generator object Trainer.train.<locals>.<genexpr> at 0x7f00c7127a50>
+
+Iteration: 32 => Loss Breakdown:
+logits weighted loss: -155.3736572265625
+logits weight: 10
+embeds weighted loss: 5.349783420562744
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 54.963836669921875
+omega weight: 0.04
+omega weighted loss: 27.861326217651367
+omega weight: 0.4
+theta_pairs weighted loss: 52.94434356689453
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 6.623327255249023
+Budget Penalty weight: 2.9825758157155393
+Iteration: 32, Total Loss: -7.631044387817383
+  2%|▏         | 30/2000 [00:01<01:11, 27.51it/s, size=25.1, bpw=2.98, mutagen=1.51, nonmutagen=-3.21]iteration=32, loss=-7.63, size=25.085145950317383, scores={'mutagen': 1.5131868124008179, 'nonmutagen': -3.206324815750122}
+
+Prediction of the sample:  <generator object Trainer.train.<locals>.<genexpr> at 0x7f00c72df190>
+
+Iteration: 33 => Loss Breakdown:
+logits weighted loss: -154.1378631591797
+logits weight: 10
+embeds weighted loss: 5.287439346313477
+embeds weight: 10
+logits weighted loss: -0.0
+logits weight: 0
+omega weighted loss: 55.2078857421875
+omega weight: 0.04
+omega weighted loss: 27.96937370300293
+omega weight: 0.4
+theta_pairs weighted loss: 32.68975830078125
+theta_pairs weight: 0.25
+Budget Penalty weighted loss: 2.416747808456421
+Budget Penalty weight: 3.2808333972870933
+Iteration: 33, Total Loss: -30.566650390625
+  2%|▏         | 34/2000 [00:01<01:08, 28.75it/s, size=24.3, bpw=3.28, mutagen=1.75, nonmutagen=-3.22]iteration=33, loss=-30.57, size=24.293691635131836, scores={'mutagen': 1.7454636096954346, 'nonmutagen': -3.2172348499298096}
+  2%|▏         | 34/2000 [00:01<01:36, 20.28it/s, size=24.3, bpw=3.28, mutagen=1.75, nonmutagen=-3.22]
+Prediction of the sample:  <generator object Trainer.train.<locals>.<genexpr> at 0x7f00c72df0b0>
+Expected number of edges of sample: 24.293691635131836; Budget: 25
+Current explanation has high prediction probability and low expected maximum number of edges. Hence, it is a good explanation.
+Breaking from train loop!
+
+
+GENERATED EXPLANATION: 
+
+n=8 m=4
+logits=[2.524606704711914, -3.6799938678741455]
+probs=[0.9979839324951172, 0.0020160432904958725]
+Graph Viz info: 
+No of nodes:  8
+Nodes:  [(12, {'label': 'H', 'color': 'yellow'}), (13, {'label': 'I', 'color': 'gray'}), (19, {'label': 'S', 'color': 'brown'}), (26, {'label': 'C', 'color': 'red'}), (20, {'label': 'Cl', 'color': 'green'}), (21, {'label': 'P', 'color': 'black'}), (28, {'label': 'O', 'color': 'blue'}), (29, {'label': 'Cl', 'color': 'green'})]
+No of edges:  4
+Edges:  [(12, 13, {'label': 'triple', 'color': 'blue', 'width': 9}), (19, 26, {'label': 'triple', 'color': 'blue', 'width': 9}), (20, 21, {'label': 'double', 'color': 'red', 'width': 6}), (28, 29, {'label': 'triple', 'color': 'blue', 'width': 9})]
+
+
+2.) NON-MUTAGEN (CLASS 1):
+
+

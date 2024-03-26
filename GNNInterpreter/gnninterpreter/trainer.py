@@ -25,6 +25,7 @@ class Trainer:
                  scheduler, ### scheduler for learning rate decay
                  optimizer, ### optimizer for the sampler (SGD, Adam, etc.)
                  dataset, 
+                 ged_closeness_criterion=None, ### loss related to the discrete graph and graph edit distance
                  budget_penalty=None, ### expected maximum number of edges in the sampled graph
                  seed=None,
                  target_probs: dict[tuple[float, float]] = None,  ### gives the range of probabilities for target class to be explained
@@ -35,6 +36,7 @@ class Trainer:
         self.sampler = sampler
         self.discriminator = discriminator
         self.criterion = criterion
+        self.ged_closeness_criterion = ged_closeness_criterion
         self.budget_penalty = budget_penalty
         self.scheduler = scheduler
         self.optimizer = optimizer if isinstance(optimizer, list) else [optimizer]
@@ -82,6 +84,9 @@ class Trainer:
         self.sampler.train()
         budget_penalty_weight = 1
         
+        total_loss_list = []
+        budget_penalty_loss_list = []
+        
         # for each iteration:
         for _ in (bar := tqdm(range(int(iterations)), initial=self.iteration, total=self.iteration+iterations)):
             for opt in self.optimizer:
@@ -119,9 +124,33 @@ class Trainer:
                 ### How will budget penalty decrease help in achieving target prob?
                 budget_penalty_weight *= 0.95 ### if the generated explanation doesn't achieve the target probability, then decrease the budget penalty weight by 5%
 
+            print(f"\nIteration: {self.iteration} => Loss Breakdown:")
+
             loss = self.criterion(cont_out | self.sampler.to_dict()) ### Why is self.sample.to_dict() used here? 
             if self.budget_penalty:
-                loss += self.budget_penalty(self.sampler.theta) * budget_penalty_weight
+                budget_penalty_loss = self.budget_penalty(self.sampler.theta) * budget_penalty_weight
+                loss += budget_penalty_loss
+                print(f"Budget Penalty weighted loss: {budget_penalty_loss}")
+                print(f"Budget Penalty weight: {budget_penalty_weight}")
+                budget_penalty_loss_list.append(budget_penalty_loss)
+           
+            print(f"Iteration: {self.iteration}, Total Loss: {loss}", flush=True)
+            # print(f"type of loss: {type(loss)}")
+            # print(f"shape of loss: {loss.shape}")
+            
+            
+            if self.ged_closeness_criterion is not None:    
+                ged_loss = self.ged_closeness_criterion(disc_data)
+                print(f"Iteration: {self.iteration}, GED Loss: {ged_loss}")
+                # print(f"type of ged_loss: {type(ged_loss)}")
+                # print(f"shape of ged_loss: {ged_loss.shape}")
+                # add the loss related to the discrete graph (GED_closeness_criterion)
+                loss += ged_loss
+            
+            
+            total_loss_list.append(loss)
+            
+            
             loss.backward()  # Back-propagate gradients
 
             # print(self.sampler.omega.grad)
@@ -139,9 +168,9 @@ class Trainer:
             bar.set_postfix({'size': size} | penalty_weight | score_dict)
             print(f"iteration={self.iteration}, loss={loss.item():.2f}, {size=}, scores={score_dict}")
             self.iteration += 1
-        else:
-            return False
-        return True
+        # else:
+        #     return False
+        return total_loss_list, budget_penalty_loss_list
 
     def undo(self):
         self.sampler.load_state_dict(self.bkup_state)
